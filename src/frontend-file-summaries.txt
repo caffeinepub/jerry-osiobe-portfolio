@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates the portfolio layout by rendering all section components in sequence, including the new CertificationsGallery positioned after Interests and before Footer.",
+  "frontend/src/components/HeroSection.tsx": "Hero section component displaying engineer's name, credentials, professional titles, and contact information with background image and professional headshot photo.",
+  "frontend/src/components/ProfessionalSummary.tsx": "Professional summary section component presenting the engineer's expertise and key qualifications in a card layout.",
+  "frontend/src/components/CoreCompetencies.tsx": "Core competencies section displaying nine technical skills in a responsive grid with icons and hover effects.",
+  "frontend/src/components/Education.tsx": "Education section listing three academic qualifications in reverse chronological order with institution details and graduation years.",
+  "frontend/src/components/ProfessionalCertifications.tsx": "Professional certifications section organized into six categories displaying memberships, project management, data/AI, cybersecurity, process improvement, and technical course certifications.",
+  "frontend/src/components/ProfessionalExperience.tsx": "Professional experience section displaying six roles in timeline format with company names, periods, and bullet-pointed responsibilities.",
+  "frontend/src/components/ResearchPapers.tsx": "Research papers section listing five publications with titles and clickable DOI links to external sources.",
+  "frontend/src/components/Interests.tsx": "Interests section displaying five personal hobbies with icons in a clean, horizontal layout.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright information and attribution link to caffeine.ai with UTM tracking parameters.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as the portfolio is static and doesn't require backend data queries.",
+  "frontend/src/index.css": "Global styles defining OKLCH color system with sophisticated slate and teal palette, typography hierarchy, and custom utility classes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended color palette featuring teal and slate colors, custom border radius, shadows, and typography settings.",
+  "frontend/src/components/CertificationsGallery.tsx": "Professional certifications gallery component displaying 54 certification images (24 original + 30 new) in a responsive grid layout with hover effects and click-to-expand modal functionality, including Six Sigma, Microsoft AI, Alison diplomas, Techlytics, COREN, NECA cybersecurity, Data Protection, NYSC, and academic credentials.",
+  "frontend/src/components/CertificateModal.tsx": "Reusable modal component for displaying certificate images in full-screen view with close button, previous/next navigation arrows, keyboard support (Escape, ArrowLeft, ArrowRight), and accessible ARIA attributes."
+}

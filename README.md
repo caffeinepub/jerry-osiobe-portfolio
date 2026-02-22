@@ -1,2 +1,3 @@
-# jerry-osiobe-portfolio
-Exported from Caffeine project: Jerry Osiobe Portfolio
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

@@ -1,0 +1,48 @@
+{
+  "kind": "build_request",
+  "title": "Add 30 new certification images to gallery",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "text": "Add 30 newly uploaded certification images (IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg) to the existing CertificationsGallery component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-final-message"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 30 new certification images are added to the CertificationsGallery component's image array",
+        "New certificates include Six Sigma White Belt, Microsoft AI certifications, Alison diplomas, Techlytics certificates, COREN participation certificate, NECA cybersecurity certificates, Data Protection training certificate, NYSC certificate, and academic credentials",
+        "Images are correctly referenced from frontend/public/assets/ directory",
+        "Gallery maintains its existing responsive grid layout and interactive features with the expanded collection"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Configure the 30 newly uploaded certification image files as static assets in the frontend/public/assets/ directory",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-final-message"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 30 certification images are placed in frontend/public/assets/ directory",
+        "Image filenames match exactly: IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg",
+        "Images are accessible via the correct asset paths in the component"
+      ]
+    }
+  ],
+  "constraints": [],
+  "nonGoals": [
+    "Modifying the gallery's responsive layout or interactive features",
+    "Changing the gallery's position in the portfolio layout",
+    "Removing or replacing previously uploaded certification images"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

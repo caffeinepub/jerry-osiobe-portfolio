@@ -1,0 +1,185 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add 30 new certification images to gallery",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "summary": "Add 30 newly uploaded certification images to the CertificationsGallery component's image array",
+      "acceptanceCriteria": [
+        "All 30 new certification images are added to the CertificationsGallery component's image array",
+        "New certificates include Six Sigma White Belt, Microsoft AI certifications, Alison diplomas, Techlytics certificates, COREN participation certificate, NECA cybersecurity certificates, Data Protection training certificate, NYSC certificate, and academic credentials",
+        "Images are correctly referenced from frontend/public/assets/ directory",
+        "Gallery maintains its existing responsive grid layout and interactive features with the expanded collection"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/CertificationsGallery.tsx",
+          "operation": "modify",
+          "description": "Add 30 new certification image entries to the images array in CertificationsGallery component. The new images are: IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg. Reference each image using the path format /assets/IMG_XXXX.jpeg to match the existing pattern in the component. The component already displays 24 certificates, so the updated array will contain 54 total entries. Ensure the new entries follow the existing structure with src and alt properties."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Configure the 30 newly uploaded certification image files as static assets in the frontend/public/assets/ directory",
+      "acceptanceCriteria": [
+        "All 30 certification images are placed in frontend/public/assets/ directory",
+        "Image filenames match exactly: IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg",
+        "Images are accessible via the correct asset paths in the component"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/IMG_4583-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4583-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Lean Six Sigma White Belt certification from the Management and Strategy Institute for Jerry Osiobe."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4582.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4582.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Microsoft/IOE AI for SMEs quiz completion certificate for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4203-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4203-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an IBM Cybersecurity Intro certificate for Osiobe Jerry."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4177-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4177-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Microsoft/IOE AI Fluency Training certificate for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4181-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4181-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Alison Diploma in Manufacturing and Product Design for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4176.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4176.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Techlytics Data Analytics certificate for Jerry Osiobe."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4175-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4175-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Management and Strategy Institute Project Management Essentials certificate for Jerry Ebruvwiyor Osiobe."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4173.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4173.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an ITF-NECA Technical Skills Development Project Cybersecurity certificate for Jerry Ebruvwiyor Osiobe."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4182.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4182.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Alison Fundamentals of Network Security certificate for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4180-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4180-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Alison Systems Engineering certificate for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4200.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4200.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Akanu Ibiam Federal Polytechnic Unwana National Diploma certificate for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4178-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4178-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a COREN Certificate of Participation for the 32nd Engineering Assembly for Engr. Jerry Ebruvwiyor Osiobe."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4198-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4198-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a National Youth Service Corps Certificate of National Service for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4174-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4174-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Data Protection Induction Training Certificate of Attendance for Osiobe Jerry Ebruvwiyor."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4582-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4582-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Microsoft/IOE AI for SMEs quiz completion certificate for Osiobe Jerry Ebruvwiyor (duplicate variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4583-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4583-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Lean Six Sigma White Belt certification from the Management and Strategy Institute for Jerry Osiobe (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4203-3.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4203-3.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an IBM Cybersecurity Intro certificate for Osiobe Jerry (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4181-3.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4181-3.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Alison Diploma in Manufacturing and Product Design for Osiobe Jerry Ebruvwiyor (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4199.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4199.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Federal University of Technology Owerri Bachelor of Engineering certificate for Jerry Ebruvwiyor Osiobe."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4198-3.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4198-3.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a National Youth Service Corps Certificate of National Service for Osiobe Jerry Ebruvwiyor (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4173-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4173-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an ITF-NECA Technical Skills Development Project Cybersecurity certificate for Jerry Ebruvwiyor Osiobe (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4177-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4177-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Microsoft/IOE AI Fluency Training certificate for Osiobe Jerry Ebruvwiyor (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4175-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4175-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Management and Strategy Institute Project Management Essentials certificate for Jerry Ebruvwiyor Osiobe (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4182-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4182-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Alison Fundamentals of Network Security certificate for Osiobe Jerry Ebruvwiyor (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4180-3.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4180-3.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Alison Systems Engineering certificate for Osiobe Jerry Ebruvwiyor (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4176-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4176-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Techlytics Data Analytics certificate for Jerry Osiobe (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4178-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4178-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a COREN Certificate of Participation for the 32nd Engineering Assembly for Engr. Jerry Ebruvwiyor Osiobe (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4174-2.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4174-2.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Data Protection Induction Training Certificate of Attendance for Osiobe Jerry Ebruvwiyor (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4200-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4200-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows an Akanu Ibiam Federal Polytechnic Unwana National Diploma certificate for Osiobe Jerry Ebruvwiyor (variant)."
+        },
+        {
+          "path": "frontend/public/assets/IMG_4199-1.jpeg",
+          "operation": "create",
+          "description": "Place the uploaded certification image IMG_4199-1.jpeg in the frontend/public/assets/ directory as a static asset. This file shows a Federal University of Technology Owerri Bachelor of Engineering certificate for Jerry Ebruvwiyor Osiobe (variant)."
+        }
+      ]
+    }
+  ]
+}

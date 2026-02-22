@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
+  "architectural_notes": [
+    "Single-page portfolio website with smooth scrolling navigation",
+    "Sections: Hero, Summary, Competencies, Education, Certifications, Experience, Publications, Interests",
+    "Contact information prominently displayed with email and phone links",
+    "Timeline-based layout for experience section showing career progression",
+    "DOI links for research publications leading to external sources",
+    "User will provide their own professional headshot photo to replace placeholder avatar",
+    "Certifications gallery section at bottom displaying ~30 uploaded certification images in a responsive grid layout"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-displaying-engr-jerry-ebruvwiyor-osiobe-mnse-coren-as-the-main-heading-with-subtitle-registered-engineer-coren-member-nigerian-society-of-engineers-mnse-location-lagos-nigeria-email-osiobejerry7-gmail-com-and-phone-234-7025937757",
+      "title": "Create a hero section displaying 'Engr. Jerry Ebruvwiyor Osiobe, MNSE, COREN' as the main heading, with subtitle 'Registered Engineer (COREN) | Member, Nigerian Society of Engineers (MNSE)', location 'Lagos, Nigeria', email 'osiobejerry7@gmail.com', and phone '+234-7025937757'",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-professional-summary-section-containing-the-text-results-driven-engineer-with-expertise-in-materials-metallurgical-engineering-project-management-cybersecurity-and-data-analytics-skilled-in-autocad-design-cctv-access-control-systems-networking-and-fabrication-engineering-adept-at-leading-projects-analyzing-data-for-business-intelligence-and-implementing-secure-it-systems-recognized-for-strong-problem-solving-technical-innovation-and-team-collaboration",
+      "title": "Create a Professional Summary section containing the text: 'Results-driven Engineer with expertise in Materials & Metallurgical Engineering, Project Management, Cybersecurity, and Data Analytics. Skilled in AutoCAD design, CCTV & Access Control Systems, Networking, and Fabrication Engineering. Adept at leading projects, analyzing data for business intelligence, and implementing secure IT systems. Recognized for strong problem-solving, technical innovation, and team collaboration.'",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-core-competencies-section-displaying-these-skills-in-a-grid-layout-project-systems-management-autocad-2d-3d-design-technical-drawings-cybersecurity-pen-testing-log-analysis-grc-data-analytics-sql-power-bi-excel-cctv-access-control-systems-computer-networking-structured-cabling-fabrication-mechanical-installation-risk-assessment-quality-management-strong-communication-english-urhobo",
+      "title": "Create a Core Competencies section displaying these skills in a grid layout: Project & Systems Management, AutoCAD 2D/3D Design & Technical Drawings, Cybersecurity (Pen Testing, Log Analysis, GRC), Data Analytics (SQL, Power BI, Excel), CCTV & Access Control Systems, Computer Networking & Structured Cabling, Fabrication & Mechanical Installation, Risk Assessment & Quality Management, Strong Communication (English & Urhobo)",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-education-section-listing-b-eng-materials-metallurgical-engineering-from-federal-university-of-technology-owerri-2019-ond-ceramics-glass-technology-from-akanu-ibiam-federal-polytechnic-unwana-2013-neco-waec-senior-school-certificate-examination-from-ibru-college-agbarha-otor-2010",
+      "title": "Create an Education section listing: B.Eng, Materials & Metallurgical Engineering from Federal University of Technology, Owerri (2019); OND, Ceramics & Glass Technology from Akanu Ibiam Federal Polytechnic, Unwana (2013); NECO & WAEC, Senior School Certificate Examination from Ibru College, Agbarha-Otor (2010)",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-professional-certifications-section-organized-into-five-categories-professional-engineering-memberships-coren-r75933-mnse-66190-mnimmme-cm641-miaeng-521253-project-risk-management-certifications-data-ai-certifications-cybersecurity-certifications-process-improvement-certifications-and-technical-courses-displaying-all-certifications-with-their-years-as-provided-in-the-resume",
+      "title": "Create a Professional Certifications section organized into five categories: Professional Engineering Memberships (COREN R75933, MNSE 66190, MNIMMME CM641, MIAENG 521253), Project & Risk Management certifications, Data & AI certifications, Cybersecurity certifications, Process Improvement certifications, and Technical Courses, displaying all certifications with their years as provided in the resume",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-professional-experience-section-displaying-six-roles-in-reverse-chronological-order-fabrication-engineer-at-nehemiah-grace-developers-ltd-dec-2025-present-cybersecurity-analyst-internship-at-neca-itf-jun-2025-oct-2025-data-analyst-internship-at-techlytics-africa-feb-2025-jun-2025-project-engineer-at-java-data-solution-ltd-nov-2023-sep-2024-project-engineer-contract-at-pavilion-technology-ltd-sep-2021-oct-2023-and-network-support-assistant-at-michael-cecilia-ibru-university-jan-2017-dec-2018-each-with-their-respective-bullet-pointed-responsibilities-as-provided",
+      "title": "Create a Professional Experience section displaying six roles in reverse chronological order: Fabrication Engineer at Nehemiah Grace Developers Ltd (Dec 2025 – Present), Cybersecurity Analyst Internship at NECA-ITF (Jun 2025 – Oct 2025), Data Analyst Internship at Techlytics Africa (Feb 2025 – Jun 2025), Project Engineer at Java Data Solution Ltd (Nov 2023 – Sep 2024), Project Engineer Contract at Pavilion Technology Ltd (Sep 2021 – Oct 2023), and Network Support Assistant at Michael & Cecilia Ibru University (Jan 2017 – Dec 2018), each with their respective bullet-pointed responsibilities as provided",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-research-papers-publications-section-listing-five-papers-with-their-titles-and-doi-links-expert-systems-in-cctv-and-access-control-management-doi-10-13140-rg-2-2-20538-86725-introduction-to-cctv-surveillance-systems-and-applications-doi-10-13140-rg-2-2-18049-31848-business-continuity-plan-using-nist-sp-800-34-rev-1-framework-doi-10-13140-rg-2-2-32324-28804-environmental-impact-assessment-app-using-prolog-reasoning-doi-10-13140-rg-2-2-21890-95688-unification-of-real-differential-real-difference-and-modular-sequential-systems-doi-10-13140-rg-2-2-23568-67847",
+      "title": "Create a Research Papers/Publications section listing five papers with their titles and DOI links: 'Expert Systems in CCTV and Access Control Management' (DOI: 10.13140/RG.2.2.20538.86725), 'Introduction to CCTV Surveillance Systems and Applications' (DOI: 10.13140/RG.2.2.18049.31848), 'Business Continuity Plan using NIST SP 800-34 Rev. 1 Framework' (DOI: 10.13140/RG.2.2.32324.28804), 'Environmental Impact Assessment App using Prolog Reasoning' (DOI: 10.13140/RG.2.2.21890.95688), 'Unification of Real Differential, Real Difference and Modular Sequential Systems' (DOI: 10.13140/RG.2.2.23568.67847)",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-interests-section-displaying-reading-learning-swimming-travelling-football",
+      "title": "Create an Interests section displaying: Reading, Learning, Swimming, Travelling, Football",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-responsive-design-that-adapts-seamlessly-to-mobile-tablet-and-desktop-screen-sizes-with-appropriate-typography-scaling-and-layout-adjustments",
+      "title": "Implement responsive design that adapts seamlessly to mobile, tablet, and desktop screen sizes with appropriate typography scaling and layout adjustments",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-professional-modern-visual-design-with-a-sophisticated-color-scheme-avoiding-blue-and-purple-unless-as-minimal-accents-clean-typography-hierarchy-appropriate-whitespace-and-subtle-visual-elements-that-convey-engineering-professionalism-and-technical-expertise",
+      "title": "Apply a professional, modern visual design with a sophisticated color scheme (avoiding blue and purple unless as minimal accents), clean typography hierarchy, appropriate whitespace, and subtle visual elements that convey engineering professionalism and technical expertise",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-avatar-placeholder-in-the-herosection-component-with-the-user-s-uploaded-professional-headshot-img-0016-jpeg-ensuring-proper-sizing-aspect-ratio-preservation-and-responsive-display",
+      "title": "Replace the avatar placeholder in the HeroSection component with the user's uploaded professional headshot (IMG_0016.jpeg), ensuring proper sizing, aspect ratio preservation, and responsive display",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-certificationsgallery-component-that-displays-the-user-s-uploaded-certification-images-30-images-including-professional-memberships-ibm-certifications-google-certifications-hp-life-courses-six-sigma-project-management-certificates-and-other-professional-credentials-in-a-responsive-masonry-or-grid-layout-positioned-at-the-bottom-of-the-portfolio-before-the-footer",
+      "title": "Create a new CertificationsGallery component that displays the user's uploaded certification images (30 images including professional memberships, IBM certifications, Google certifications, HP LIFE courses, Six Sigma, project management certificates, and other professional credentials) in a responsive masonry or grid layout positioned at the bottom of the portfolio before the footer",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-responsive-grid-layout-for-the-certifications-gallery-that-adapts-to-different-screen-sizes-single-column-on-mobile-2-3-columns-on-tablet-and-3-4-columns-on-desktop-with-consistent-spacing-and-alignment",
+      "title": "Implement responsive grid layout for the certifications gallery that adapts to different screen sizes: single column on mobile, 2-3 columns on tablet, and 3-4 columns on desktop, with consistent spacing and alignment",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-interactive-features-to-the-certification-gallery-including-hover-effects-on-certificate-images-click-to-expand-functionality-for-viewing-certificates-in-full-size-and-smooth-transitions-between-states",
+      "title": "Add interactive features to the certification gallery including hover effects on certificate images, click-to-expand functionality for viewing certificates in full size, and smooth transitions between states",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-certificationsgallery-component-into-the-main-app-tsx-component-positioning-it-after-the-interests-section-and-before-the-footer-ensuring-proper-spacing-and-visual-hierarchy-within-the-overall-portfolio-layout",
+      "title": "Integrate the CertificationsGallery component into the main App.tsx component, positioning it after the Interests section and before the Footer, ensuring proper spacing and visual hierarchy within the overall portfolio layout",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-the-uploaded-certification-images-img-4327-jpeg-through-img-4190-1-jpeg-total-of-30-images-as-static-assets-in-the-frontend-public-assets-directory-and-reference-them-correctly-in-the-certificationsgallery-component",
+      "title": "Configure the uploaded certification images (IMG_4327.jpeg through IMG_4190-1.jpeg, total of 30 images) as static assets in the frontend/public/assets/ directory and reference them correctly in the CertificationsGallery component",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-30-newly-uploaded-certification-images-img-4583-1-jpeg-img-4582-jpeg-img-4203-2-jpeg-img-4177-1-jpeg-img-4181-2-jpeg-img-4176-jpeg-img-4175-1-jpeg-img-4173-jpeg-img-4182-jpeg-img-4180-2-jpeg-img-4200-jpeg-img-4178-1-jpeg-img-4198-2-jpeg-img-4174-1-jpeg-img-4582-1-jpeg-img-4583-2-jpeg-img-4203-3-jpeg-img-4181-3-jpeg-img-4199-jpeg-img-4198-3-jpeg-img-4173-1-jpeg-img-4177-2-jpeg-img-4175-2-jpeg-img-4182-1-jpeg-img-4180-3-jpeg-img-4176-1-jpeg-img-4178-2-jpeg-img-4174-2-jpeg-img-4200-1-jpeg-img-4199-1-jpeg-to-the-existing-certificationsgallery-component",
+      "title": "Add 30 newly uploaded certification images (IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg) to the existing CertificationsGallery component",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-the-30-newly-uploaded-certification-image-files-as-static-assets-in-the-frontend-public-assets-directory",
+      "title": "Configure the 30 newly uploaded certification image files as static assets in the frontend/public/assets/ directory",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with name, title, location, and contact information",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Professional summary section highlighting engineering expertise",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Core competencies section with technical skills grid",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Education section with degrees and institutions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Professional certifications section organized by category",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Professional experience timeline with roles and responsibilities",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Research papers and publications section with DOI links",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Interests section displaying personal hobbies",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Responsive design optimized for mobile and desktop",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Professional styling with clean layout and typography",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Replace avatar placeholder with user's professional headshot photo",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Create certifications gallery section displaying all uploaded certification images in a professional grid layout at the bottom of the portfolio",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Jerry Osiobe Portfolio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

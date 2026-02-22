@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-30-newly-uploaded-certification-images-img-4583-1-jpeg-img-4582-jpeg-img-4203-2-jpeg-img-4177-1-jpeg-img-4181-2-jpeg-img-4176-jpeg-img-4175-1-jpeg-img-4173-jpeg-img-4182-jpeg-img-4180-2-jpeg-img-4200-jpeg-img-4178-1-jpeg-img-4198-2-jpeg-img-4174-1-jpeg-img-4582-1-jpeg-img-4583-2-jpeg-img-4203-3-jpeg-img-4181-3-jpeg-img-4199-jpeg-img-4198-3-jpeg-img-4173-1-jpeg-img-4177-2-jpeg-img-4175-2-jpeg-img-4182-1-jpeg-img-4180-3-jpeg-img-4176-1-jpeg-img-4178-2-jpeg-img-4174-2-jpeg-img-4200-1-jpeg-img-4199-1-jpeg-to-the-existing-certificationsgallery-component",
+      "featureTitle": "Add 30 newly uploaded certification images (IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg) to the existing CertificationsGallery component",
+      "files": [
+        "frontend/src/components/CertificationsGallery.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-configure-the-30-newly-uploaded-certification-image-files-as-static-assets-in-the-frontend-public-assets-directory",
+      "featureTitle": "Configure the 30 newly uploaded certification image files as static assets in the frontend/public/assets/ directory",
+      "files": [],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

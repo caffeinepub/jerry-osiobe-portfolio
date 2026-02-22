@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 11,
+  "projectStateVersion": 13,
   "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
   "architectural_notes": [
     "Single-page portfolio website with smooth scrolling navigation",
@@ -9,7 +9,8 @@
     "Timeline-based layout for experience section showing career progression",
     "DOI links for research publications leading to external sources",
     "User will provide their own professional headshot photo to replace placeholder avatar",
-    "Certifications gallery section at bottom displaying ~30 uploaded certification images in a responsive grid layout"
+    "Certifications gallery section at bottom displaying ~30 uploaded certification images in a responsive grid layout",
+    "CV document attached as downloadable asset accessible from the portfolio"
   ],
   "known_issues": [],
   "isFixRequest": false,
@@ -157,6 +158,22 @@
         "REQ-18"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-a-download-cv-button-in-the-herosection-component-that-triggers-download-of-the-cv-pdf-file-when-clicked",
+      "title": "Add a download CV button in the HeroSection component that triggers download of the CV PDF file when clicked",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-cv-download-button-is-responsive-and-displays-appropriately-on-mobile-tablet-and-desktop-screen-sizes",
+      "title": "Ensure the CV download button is responsive and displays appropriately on mobile, tablet, and desktop screen sizes",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -253,6 +270,20 @@
       "summary": "Apply consistent styling to each certification card in the grid including aspect ratio preservation, border radius, shadow effects, and background color matching the portfolio's design system",
       "reqIds": [
         "REQ-21"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Add downloadable CV attachment to portfolio with download functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Add the uploaded CV file (Engr. Jerry E. Osiobe CV.pdf) as a static asset in the frontend/public/assets/ directory",
+      "reqIds": [
+        "REQ-22"
       ],
       "status": "pending"
     }

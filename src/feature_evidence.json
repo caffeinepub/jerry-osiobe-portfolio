@@ -1,4 +1,43 @@
 {
   "kind": "feature_evidence_report",
-  "features": []
+  "features": [
+    {
+      "featureId": "feature-add-a-download-cv-button-in-the-herosection-component-that-triggers-download-of-the-cv-pdf-file-when-clicked",
+      "featureTitle": "Add a download CV button in the HeroSection component that triggers download of the CV PDF file when clicked",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-cv-download-button-is-responsive-and-displays-appropriately-on-mobile-tablet-and-desktop-screen-sizes",
+      "featureTitle": "Ensure the CV download button is responsive and displays appropriately on mobile, tablet, and desktop screen sizes",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-24"
+      ],
+      "confidence": "high"
+    }
+  ]
 }

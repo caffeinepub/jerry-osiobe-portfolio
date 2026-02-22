@@ -1,58 +1,54 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Organize certifications in a grid layout",
+  "title": "Add downloadable CV to portfolio",
   "requirements": [
     {
-      "id": "REQ-19",
-      "summary": "Refactor the CertificationsGallery component to organize all 54 certification images in a structured grid layout with consistent spacing, alignment, and uniform card dimensions",
+      "id": "REQ-22",
+      "summary": "Add CV PDF file as a static asset in the frontend public assets directory",
       "acceptanceCriteria": [
-        "All certification images are displayed in a uniform grid with consistent card sizes",
-        "Grid maintains proper spacing between items using gap utilities",
-        "Each certification card has equal width and height within the grid",
-        "Grid preserves existing hover effects and click-to-expand modal functionality",
-        "Layout remains responsive across mobile, tablet, and desktop breakpoints"
+        "CV PDF file is stored in frontend/public/assets/ directory",
+        "File is accessible via the frontend public assets path"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/CertificationsGallery.tsx",
-          "operation": "modify",
-          "description": "Refactor the component to render all 54 certification images in a structured grid container with uniform card dimensions, consistent gap spacing, and preserved hover effects and modal functionality. Ensure each certification card maintains equal width and height using aspect-ratio utilities or fixed dimensions."
+          "path": "frontend/public/assets/Engr-Jerry-E-Osiobe-CV.pdf",
+          "operation": "create",
+          "description": "Copy the uploaded CV file (Engr. Jerry E. Osiobe CV.pdf) to the frontend public assets directory. Rename to Engr-Jerry-E-Osiobe-CV.pdf (with hyphens instead of spaces) for web-safe URL access. This file will be served as a static asset accessible at /assets/Engr-Jerry-E-Osiobe-CV.pdf"
         }
       ]
     },
     {
-      "id": "REQ-20",
-      "summary": "Implement a responsive grid system for the CertificationsGallery that displays 1 column on mobile (sm), 2 columns on tablet (md), 3 columns on larger tablets (lg), and 4 columns on desktop (xl) screens",
+      "id": "REQ-23",
+      "summary": "Add download CV button to HeroSection component that triggers PDF download on click",
       "acceptanceCriteria": [
-        "Grid uses Tailwind's responsive grid utilities (grid-cols-1, md:grid-cols-2, lg:grid-cols-3, xl:grid-cols-4)",
-        "Column counts adjust smoothly at each breakpoint",
-        "Grid maintains visual balance at all screen sizes",
-        "No horizontal overflow occurs on any device size"
+        "Download button is visually integrated into the HeroSection component near contact information",
+        "Button has appropriate icon (e.g., Download icon from lucide-react)",
+        "Clicking the button initiates download of the CV PDF file",
+        "Button styling matches the portfolio's design system with teal accent colors",
+        "Button includes accessible label text such as 'Download CV' or 'Download Resume'"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/CertificationsGallery.tsx",
+          "path": "frontend/src/components/HeroSection.tsx",
           "operation": "modify",
-          "description": "Apply Tailwind responsive grid utilities to the gallery container using grid-cols-1 for mobile, md:grid-cols-2 for tablets, lg:grid-cols-3 for larger tablets, and xl:grid-cols-4 for desktop screens. Ensure smooth breakpoint transitions and prevent horizontal overflow at all viewport sizes."
+          "description": "Add a download CV button below the contact information section. Import Download icon from lucide-react. Create a button element with an anchor tag linking to /assets/Engr-Jerry-E-Osiobe-CV.pdf with download attribute set to the filename. Style the button with teal accent colors matching the existing design system (bg-teal-600 hover:bg-teal-700, text-white). Include the Download icon and 'Download CV' text label. Position the button prominently within the hero layout, ensuring it integrates visually with the existing contact information display"
         }
       ]
     },
     {
-      "id": "REQ-21",
-      "summary": "Apply consistent styling to each certification card in the grid including aspect ratio preservation, border radius, shadow effects, and background color matching the portfolio's design system",
+      "id": "REQ-24",
+      "summary": "Ensure CV download button is responsive across all screen sizes",
       "acceptanceCriteria": [
-        "Each card uses aspect-ratio or object-fit to maintain consistent dimensions",
-        "Cards have rounded corners using border-radius utilities",
-        "Cards include subtle shadow effects (e.g., shadow-md or shadow-lg)",
-        "Background colors align with the existing slate/teal color scheme",
-        "Certification images are centered and properly contained within their cards"
+        "Button is visible and accessible on all screen sizes",
+        "Button positioning adapts to the responsive layout of the HeroSection",
+        "Touch targets meet mobile usability standards (minimum 44x44px)"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/CertificationsGallery.tsx",
+          "path": "frontend/src/components/HeroSection.tsx",
           "operation": "modify",
-          "description": "Style each certification card with aspect-ratio or object-fit utilities to maintain consistent dimensions, apply rounded corners with border-radius utilities (e.g., rounded-lg), add subtle shadow effects (shadow-md or shadow-lg), use slate/teal background colors from the existing design system, and ensure images are centered and properly contained using object-cover or object-contain with proper alignment."
+          "description": "Apply responsive styling to the CV download button using Tailwind CSS breakpoint classes. Ensure button has adequate padding (e.g., px-6 py-3) to meet minimum 44x44px touch target for mobile. Use responsive layout utilities (flex, items-center, justify-center) to adapt button positioning for mobile (full-width or centered), tablet (inline with other elements), and desktop (integrated with contact information). Test that the button remains accessible and visually prominent across sm:, md:, and lg: breakpoints while maintaining the HeroSection's existing responsive layout"
         }
       ]
     }

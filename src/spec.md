@@ -1,10 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Add 30 newly uploaded certification images to the portfolio's certifications gallery.
+**Goal:** Organize all 54 certifications in a structured, responsive grid layout with consistent styling.
 
 **Planned changes:**
-- Add 30 certification images (IMG_4583-1.jpeg through IMG_4199-1.jpeg) to the CertificationsGallery component
-- Place all 30 certification image files in the frontend/public/assets/ directory
+- Refactor CertificationsGallery to display certifications in a uniform grid with consistent card dimensions
+- Implement responsive grid system: 1 column (mobile), 2 columns (tablet), 3 columns (large tablet), 4 columns (desktop)
+- Apply consistent styling to each card including aspect ratio preservation, rounded corners, shadows, and background colors matching the portfolio design
 
-**User-visible outcome:** The certifications gallery displays an expanded collection of 30 additional professional certificates, including Six Sigma White Belt, Microsoft AI certifications, Alison diplomas, Techlytics certificates, COREN participation certificate, NECA cybersecurity certificates, Data Protection training certificate, NYSC certificate, and academic credentials.
+**User-visible outcome:** Users will see all certifications organized in a clean, responsive grid layout with uniform card sizes and consistent spacing across all devices.

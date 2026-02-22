@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
+  "projectStateVersion": 11,
   "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
   "architectural_notes": [
     "Single-page portfolio website with smooth scrolling navigation",
@@ -230,6 +230,30 @@
       "id": "AR-12",
       "summary": "Create certifications gallery section displaying all uploaded certification images in a professional grid layout at the bottom of the portfolio",
       "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Refactor the CertificationsGallery component to organize all 54 certification images in a structured grid layout with consistent spacing, alignment, and uniform card dimensions",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Implement a responsive grid system for the CertificationsGallery that displays 1 column on mobile (sm), 2 columns on tablet (md), 3 columns on larger tablets (lg), and 4 columns on desktop (xl) screens",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Apply consistent styling to each certification card in the grid including aspect ratio preservation, border radius, shadow effects, and background color matching the portfolio's design system",
+      "reqIds": [
+        "REQ-21"
+      ],
       "status": "pending"
     }
   ],

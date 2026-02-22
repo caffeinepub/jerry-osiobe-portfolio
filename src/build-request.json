@@ -1,45 +1,80 @@
 {
   "kind": "build_request",
-  "title": "Add 30 new certification images to gallery",
+  "title": "Organize certifications in a grid layout",
+  "projectName": "Portfolio Osiobe",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-17",
-      "text": "Add 30 newly uploaded certification images (IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg) to the existing CertificationsGallery component",
+      "id": "REQ-19",
+      "text": "Refactor the CertificationsGallery component to organize all 54 certification images in a structured grid layout with consistent spacing, alignment, and uniform card dimensions",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "user-final-message"
+          "msg-4"
+        ],
+        "quotes": [
+          "Organize the certifications in a grid layout"
         ]
       },
       "acceptanceCriteria": [
-        "All 30 new certification images are added to the CertificationsGallery component's image array",
-        "New certificates include Six Sigma White Belt, Microsoft AI certifications, Alison diplomas, Techlytics certificates, COREN participation certificate, NECA cybersecurity certificates, Data Protection training certificate, NYSC certificate, and academic credentials",
-        "Images are correctly referenced from frontend/public/assets/ directory",
-        "Gallery maintains its existing responsive grid layout and interactive features with the expanded collection"
+        "All certification images are displayed in a uniform grid with consistent card sizes",
+        "Grid maintains proper spacing between items using gap utilities",
+        "Each certification card has equal width and height within the grid",
+        "Grid preserves existing hover effects and click-to-expand modal functionality",
+        "Layout remains responsive across mobile, tablet, and desktop breakpoints"
       ]
     },
     {
-      "id": "REQ-18",
-      "text": "Configure the 30 newly uploaded certification image files as static assets in the frontend/public/assets/ directory",
+      "id": "REQ-20",
+      "text": "Implement a responsive grid system for the CertificationsGallery that displays 1 column on mobile (sm), 2 columns on tablet (md), 3 columns on larger tablets (lg), and 4 columns on desktop (xl) screens",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "user-final-message"
+          "msg-4"
+        ],
+        "quotes": [
+          "Organize the certifications in a grid layout"
         ]
       },
       "acceptanceCriteria": [
-        "All 30 certification images are placed in frontend/public/assets/ directory",
-        "Image filenames match exactly: IMG_4583-1.jpeg, IMG_4582.jpeg, IMG_4203-2.jpeg, IMG_4177-1.jpeg, IMG_4181-2.jpeg, IMG_4176.jpeg, IMG_4175-1.jpeg, IMG_4173.jpeg, IMG_4182.jpeg, IMG_4180-2.jpeg, IMG_4200.jpeg, IMG_4178-1.jpeg, IMG_4198-2.jpeg, IMG_4174-1.jpeg, IMG_4582-1.jpeg, IMG_4583-2.jpeg, IMG_4203-3.jpeg, IMG_4181-3.jpeg, IMG_4199.jpeg, IMG_4198-3.jpeg, IMG_4173-1.jpeg, IMG_4177-2.jpeg, IMG_4175-2.jpeg, IMG_4182-1.jpeg, IMG_4180-3.jpeg, IMG_4176-1.jpeg, IMG_4178-2.jpeg, IMG_4174-2.jpeg, IMG_4200-1.jpeg, IMG_4199-1.jpeg",
-        "Images are accessible via the correct asset paths in the component"
+        "Grid uses Tailwind's responsive grid utilities (grid-cols-1, md:grid-cols-2, lg:grid-cols-3, xl:grid-cols-4)",
+        "Column counts adjust smoothly at each breakpoint",
+        "Grid maintains visual balance at all screen sizes",
+        "No horizontal overflow occurs on any device size"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Apply consistent styling to each certification card in the grid including aspect ratio preservation, border radius, shadow effects, and background color matching the portfolio's design system",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Organize the certifications in a grid layout"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each card uses aspect-ratio or object-fit to maintain consistent dimensions",
+        "Cards have rounded corners using border-radius utilities",
+        "Cards include subtle shadow effects (e.g., shadow-md or shadow-lg)",
+        "Background colors align with the existing slate/teal color scheme",
+        "Certification images are centered and properly contained within their cards"
       ]
     }
   ],
-  "constraints": [],
+  "constraints": [
+    "Preserve existing click-to-expand modal functionality with CertificateModal",
+    "Maintain keyboard navigation and accessibility features (Escape, ArrowLeft, ArrowRight)",
+    "Keep all 54 certification images in the gallery without removal",
+    "Do not modify the modal component (CertificateModal.tsx)"
+  ],
   "nonGoals": [
-    "Modifying the gallery's responsive layout or interactive features",
-    "Changing the gallery's position in the portfolio layout",
-    "Removing or replacing previously uploaded certification images"
+    "Adding category labels or filtering functionality to the certifications",
+    "Reordering or sorting certifications by type or date",
+    "Implementing lazy loading or pagination for certification images",
+    "Creating separate galleries for different certification categories"
   ],
   "imageRequirements": {
     "required": [],

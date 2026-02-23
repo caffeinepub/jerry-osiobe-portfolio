@@ -70,18 +70,9 @@ actor {
     asset;
   };
 
-  public query ({ caller }) func getAllCertificates() : async [CertificateAsset] {
-    if (not (AccessControl.hasPermission(accessControlState, caller, #user))) {
-      Runtime.trap("Unauthorized: Only users can view certificates");
-    };
-
-    // Users can only see their own certificates, admins can see all
-    if (AccessControl.isAdmin(accessControlState, caller)) {
-      certificates.values().toArray();
-    } else {
-      certificates.values()
-        .filter(func(cert : CertificateAsset) : Bool { cert.owner == caller })
-        .toArray();
-    };
+  public query func getAllCertificates() : async [CertificateAsset] {
+    // Public portfolio view - no authentication required
+    // Anyone (including guests) can view all certificates
+    certificates.values().toArray();
   };
 };

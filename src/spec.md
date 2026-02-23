@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Remove a specific certificate from the certificates gallery grid.
+**Goal:** Deploy the portfolio application to production.
 
 **Planned changes:**
-- Remove the certificate entry at grid position div[5] from the CertificatesFolder component array
-- Delete the corresponding certificate image file from the assets directory
-- Ensure the grid layout adjusts automatically after removal
+- Deploy frontend and backend to production environment
+- Configure production deployment settings
+- Ensure all assets and authentication work in production
 
-**User-visible outcome:** The certificate at the specified grid position is no longer displayed in the certificates gallery, and the remaining certificates adjust to fill the space.
+**User-visible outcome:** The portfolio application is live and accessible on the internet with full functionality.

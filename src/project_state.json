@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 63,
+  "projectStateVersion": 65,
   "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
   "architectural_notes": [
     "Single-page portfolio website with smooth scrolling navigation",
@@ -702,6 +702,14 @@
       "summary": "Delete the corresponding certificate image file from the frontend/public/assets/ directory that was displayed at grid position div[5]",
       "reqIds": [
         "REQ-91"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-43",
+      "summary": "Deploy the current version of the portfolio application to production",
+      "reqIds": [
+        "REQ-92"
       ],
       "status": "pending"
     }

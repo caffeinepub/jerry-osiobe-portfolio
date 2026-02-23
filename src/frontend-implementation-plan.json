@@ -1,36 +1,118 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove specific certificate from CertificatesFolder grid",
+  "title": "Deploy Jerry Osiobe Portfolio to Production",
   "requirements": [
     {
-      "id": "REQ-90",
-      "summary": "Remove the certificate at grid position div[5] from the CertificatesFolder component",
+      "id": "REQ-92",
+      "summary": "Deploy the portfolio application to production with all frontend components, static assets, and Internet Identity authentication functioning correctly",
       "acceptanceCriteria": [
-        "The certificate at the specified XPath position /html[1]/body[1]/div[1]/div[1]/main[1]/section[8]/div[1]/div[2]/div[5]/div[1]/div[1] is removed from the staticCertificates array",
-        "The grid layout adjusts automatically to fill the gap",
-        "No broken image references remain in the component"
+        "The application is deployed to production environment",
+        "All frontend components render correctly in production",
+        "Backend actor is deployed and accessible",
+        "Static assets are properly served",
+        "Internet Identity authentication works in production"
       ],
       "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Verify all component imports and ensure production-ready error boundaries are in place. Confirm ThemeProvider and Toaster are properly configured for production deployment."
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Ensure QueryClient configuration is optimized for production with appropriate staleTime and cacheTime settings. Verify InternetIdentityProvider is configured with production Internet Identity canister URL."
+        },
+        {
+          "path": "frontend/src/hooks/useActor.ts",
+          "operation": "modify",
+          "description": "Verify backend actor initialization uses production canister IDs and handles network errors gracefully. Ensure admin token initialization from URL parameters works correctly in production environment."
+        },
+        {
+          "path": "frontend/src/hooks/useInternetIdentity.ts",
+          "operation": "modify",
+          "description": "Confirm Internet Identity integration uses production configuration with correct identity provider URL and proper error handling for authentication failures in production."
+        },
         {
           "path": "frontend/src/components/CertificatesFolder.tsx",
           "operation": "modify",
-          "description": "Review the component to identify the certificate at grid position div[5] (the 5th item in the grid). If using a staticCertificates array, remove the entry at index 4 (zero-based). If certificates are rendered from uploaded data, identify and remove the specific certificate reference that appears at the 5th grid position. Ensure the grid layout remains intact and no broken image references remain."
-        }
-      ]
-    },
-    {
-      "id": "REQ-91",
-      "summary": "Delete the certificate image file from frontend/public/assets/ that was displayed at grid position div[5]",
-      "acceptanceCriteria": [
-        "The image file is completely removed from the assets directory",
-        "No orphaned files remain in the project"
-      ],
-      "file_operations": [
+          "description": "Verify file upload functionality works in production with proper error handling, progress tracking, and validation. Ensure ExternalBlob integration from blob-storage component functions correctly with production backend."
+        },
         {
-          "path": "frontend/public/assets/{certificate-filename}",
-          "operation": "delete",
-          "description": "Delete the specific certificate image file that corresponds to the 5th grid position in the CertificatesFolder component. The exact filename must be identified by reviewing the CertificatesFolder.tsx component code to determine which asset file is referenced at that position."
+          "path": "frontend/src/components/CertificateModal.tsx",
+          "operation": "modify",
+          "description": "Ensure modal component renders certificates correctly in production with proper keyboard navigation and accessibility features functioning."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Verify static assets (profile images at frontend/public/assets/generated/jerry-osiobe-headshot.dim_400x400.png and frontend/public/assets/generated/hero-bg.dim_1920x600.png) are correctly referenced and load properly in production."
+        },
+        {
+          "path": "frontend/src/hooks/useQueries.ts",
+          "operation": "modify",
+          "description": "Verify React Query hooks for certificate fetching, uploading, and user profile management work correctly with production backend actor. Ensure cache invalidation and error handling are production-ready."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Ensure HTML entry point has production-appropriate meta tags, favicon references, and script loading configuration for optimal performance."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Verify Tailwind CSS configuration with OKLCH color system and custom theme variables compile correctly for production build."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Confirm Tailwind configuration with custom colors, animations, and theme extensions is optimized for production build size and performance."
+        },
+        {
+          "path": "frontend/src/components/ProfessionalExperience.tsx",
+          "operation": "modify",
+          "description": "Verify experience timeline component renders correctly in production with proper responsive layout and visual timeline elements."
+        },
+        {
+          "path": "frontend/src/components/ProfessionalCertifications.tsx",
+          "operation": "modify",
+          "description": "Ensure certifications grid displays correctly in production with all categories and entries properly formatted."
+        },
+        {
+          "path": "frontend/src/components/CoreCompetencies.tsx",
+          "operation": "modify",
+          "description": "Verify competencies grid with icons and hover effects functions correctly in production environment."
+        },
+        {
+          "path": "frontend/src/components/Education.tsx",
+          "operation": "modify",
+          "description": "Ensure education section renders all academic qualifications correctly in production."
+        },
+        {
+          "path": "frontend/src/components/Interests.tsx",
+          "operation": "modify",
+          "description": "Verify interests grid displays correctly with icons and styling in production."
+        },
+        {
+          "path": "frontend/src/components/ResearchPapers.tsx",
+          "operation": "modify",
+          "description": "Ensure research papers list with DOI links functions correctly in production."
+        },
+        {
+          "path": "frontend/src/components/ProfessionalSummary.tsx",
+          "operation": "modify",
+          "description": "Verify professional summary card renders correctly in production."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Ensure footer with copyright notice and attribution links displays correctly in production."
+        },
+        {
+          "path": "frontend/src/utils/urlParams.ts",
+          "operation": "modify",
+          "description": "Verify URL parameter utilities for admin token extraction work correctly in production with hash-based routing and sessionStorage integration."
         }
       ]
     }

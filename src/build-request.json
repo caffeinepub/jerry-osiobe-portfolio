@@ -1,54 +1,40 @@
 {
   "kind": "build_request",
-  "title": "Remove specific certificate from CertificatesFolder grid",
+  "title": "Publish the portfolio application",
+  "projectName": "Jerry Osiobe Portfolio",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-90",
-      "text": "Remove the certificate image at grid position div[5] within section[8]/div[1]/div[2] from the CertificatesFolder component array (frontend/src/components/CertificatesFolder.tsx)",
-      "target": "frontend",
+      "id": "REQ-92",
+      "text": "Deploy the current version of the portfolio application to production",
+      "target": "both",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-6"
         ],
         "quotes": [
-          "delete"
+          "make it publish"
         ]
       },
       "acceptanceCriteria": [
-        "The certificate at the specified XPath position /html[1]/body[1]/div[1]/div[1]/main[1]/section[8]/div[1]/div[2]/div[5]/div[1]/div[1] is removed from the staticCertificates array",
-        "The grid layout adjusts automatically to fill the gap",
-        "No broken image references remain in the component"
-      ]
-    },
-    {
-      "id": "REQ-91",
-      "text": "Delete the corresponding certificate image file from the frontend/public/assets/ directory that was displayed at grid position div[5]",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ],
-        "quotes": [
-          "delete"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The image file is completely removed from the assets directory",
-        "No orphaned files remain in the project"
+        "The application is deployed to production environment",
+        "All frontend components render correctly in production",
+        "Backend actor is deployed and accessible",
+        "Static assets are properly served",
+        "Internet Identity authentication works in production"
       ]
     }
   ],
   "constraints": [
-    "Only remove the certificate at the exact grid position specified by the XPath: section[8]/div[1]/div[2]/div[5]",
-    "Do not modify any other certificates in the grid",
-    "Preserve the existing responsive grid layout and spacing"
+    "Maintain single-actor backend architecture",
+    "Preserve all existing functionality",
+    "Do not modify immutable frontend paths"
   ],
   "nonGoals": [
-    "Removing any other certificates from the gallery",
-    "Modifying the CertificateModal component",
-    "Changing the upload functionality",
-    "Altering the grid layout structure"
+    "Adding new features",
+    "Modifying existing components",
+    "Changing design or styling",
+    "Altering authentication flow"
   ],
   "imageRequirements": {
     "required": [],

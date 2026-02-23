@@ -1,41 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Add MSc Systems Engineering to Education section",
+  "title": "Replace existing CV with newly uploaded file",
   "projectName": "Jerry Osiobe Portfolio",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-41",
-      "text": "Add a new education entry to the Education component (frontend/src/components/Education.tsx) for 'MSc in Systems Engineering' from 'University of Lagos, Akoka' with year '2026' and status '(In View)', positioned at the top of the education list above the existing B.Eng entry",
+      "id": "REQ-44",
+      "text": "Replace the existing CV file 'Engr. Jerry E. Osiobe CV.pdf' in frontend/public/assets/ directory with the newly uploaded CV file",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-current"
+          "msg-latest"
         ],
         "quotes": [
-          "MSc in view,  Systems Engineering\nUniversity of Lagos, Akoka.\n2026\nAdd this to my education section of my portfolio"
+          "Upload this CV to replace the old one in my portfolio"
         ]
       },
       "acceptanceCriteria": [
-        "The MSc entry appears as the first item in the education section",
-        "The degree displays as 'MSc in Systems Engineering'",
-        "The institution displays as 'University of Lagos, Akoka'",
-        "The year displays as '2026'",
-        "The status '(In View)' is clearly indicated",
-        "The entry follows the same card layout and styling as existing education entries",
-        "The graduation cap icon is displayed consistently with other entries"
+        "The old CV file is removed from frontend/public/assets/",
+        "The new CV file is placed at frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
+        "The download link in HeroSection component continues to work with the same filename path"
       ]
     }
   ],
   "constraints": [
-    "Do not modify the structure or styling of existing education entries",
-    "Maintain the existing card-based layout with icons",
-    "Keep the chronological order with newest degree first"
+    "Do not modify the HeroSection component's download button link path",
+    "Maintain the exact filename 'Engr. Jerry E. Osiobe CV.pdf' to preserve existing references"
   ],
   "nonGoals": [
-    "Modifying any other sections of the portfolio",
-    "Changing the visual design or color scheme of the education section",
-    "Adding any backend functionality"
+    "Changing the CV filename or path structure",
+    "Modifying any other portfolio components",
+    "Adding new CV-related features"
   ],
   "imageRequirements": {
     "required": [],

@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Add MSc Systems Engineering degree entry to the Education section of the portfolio.
+**Goal:** Replace the existing CV file with the newly uploaded version.
 
 **Planned changes:**
-- Add a new education entry for "MSc in Systems Engineering" from "University of Lagos, Akoka" with year "2026" and status "(In View)"
-- Position the new entry at the top of the education list above the existing B.Eng entry
-- Maintain the same card layout, styling, and graduation cap icon as existing entries
+- Remove the old CV file from frontend/public/assets/
+- Add the new CV file to frontend/public/assets/ with the same filename 'Engr. Jerry E. Osiobe CV.pdf'
 
-**User-visible outcome:** The Education section displays the MSc Systems Engineering degree (In View) as the first entry, showing the degree, institution, year, and status in a consistent card format.
+**User-visible outcome:** Users can download the updated CV when clicking the download button in the portfolio, with all existing links continuing to work seamlessly.

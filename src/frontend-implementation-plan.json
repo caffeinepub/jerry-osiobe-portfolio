@@ -1,25 +1,26 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add MSc Systems Engineering to Education section",
+  "title": "Replace existing CV with newly uploaded file",
   "requirements": [
     {
-      "id": "REQ-41",
-      "summary": "Add MSc in Systems Engineering entry to the Education component as the first item in the education list",
+      "id": "REQ-44",
+      "summary": "Replace the existing CV file with the newly uploaded CV file while maintaining the same filename and path",
       "acceptanceCriteria": [
-        "The MSc entry appears as the first item in the education section",
-        "The degree displays as 'MSc in Systems Engineering'",
-        "The institution displays as 'University of Lagos, Akoka'",
-        "The year displays as '2026'",
-        "The status '(In View)' is clearly indicated",
-        "The entry follows the same card layout and styling as existing education entries",
-        "The graduation cap icon is displayed consistently with other entries"
+        "The old CV file is removed from frontend/public/assets/",
+        "The new CV file is placed at frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
+        "The download link in HeroSection component continues to work with the same filename path"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Education.tsx",
-          "operation": "modify",
-          "description": "Add a new education entry for MSc in Systems Engineering from University of Lagos, Akoka (2026, In View) at the top of the education list. Insert the new entry before the existing B.Eng entry while maintaining the same card structure, graduation cap icon, and styling. Include the '(In View)' status alongside the year in a way that's visually consistent with the existing layout."
+          "path": "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
+          "operation": "delete",
+          "description": "Remove the existing CV file from the assets directory"
+        },
+        {
+          "path": "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
+          "operation": "create",
+          "description": "Add the newly uploaded CV file (NEW CV 2026.pdf from the assets list) to the assets directory with the exact filename 'Engr. Jerry E. Osiobe CV.pdf' to maintain compatibility with the existing download link in HeroSection component"
         }
       ]
     }

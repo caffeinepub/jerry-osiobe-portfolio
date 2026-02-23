@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 27,
+  "projectStateVersion": 31,
   "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
   "architectural_notes": [
     "Single-page portfolio website with smooth scrolling navigation",
@@ -281,6 +281,30 @@
         "REQ-41"
       ],
       "version": 2
+    },
+    {
+      "id": "feature-replace-the-existing-cv-file-in-frontend-public-assets-directory-with-the-newly-uploaded-cv-file-engr-jerry-e-osiobe-cv-pdf",
+      "title": "Replace the existing CV file in frontend/public/assets/ directory with the newly uploaded CV file (Engr. Jerry E. Osiobe CV.pdf)",
+      "reqIds": [
+        "REQ-42"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-download-cv-button-in-the-herosection-component-to-reference-the-new-cv-filename-engr-jerry-e-osiobe-cv-pdf",
+      "title": "Update the download CV button in the HeroSection component to reference the new CV filename (Engr. Jerry E. Osiobe CV.pdf)",
+      "reqIds": [
+        "REQ-43"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-cv-file-engr-jerry-e-osiobe-cv-pdf-in-frontend-public-assets-directory-with-the-newly-uploaded-cv-file",
+      "title": "Replace the existing CV file 'Engr. Jerry E. Osiobe CV.pdf' in frontend/public/assets/ directory with the newly uploaded CV file",
+      "reqIds": [
+        "REQ-44"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -362,6 +386,12 @@
       "reqIds": [
         "REQ-22"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Replace the existing CV file with the newly uploaded CV (Engr. Jerry E. Osiobe CV.pdf) in the frontend/public/assets/ directory",
+      "reqIds": [],
       "status": "pending"
     }
   ],

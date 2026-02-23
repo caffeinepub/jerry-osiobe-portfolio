@@ -2,11 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-a-new-education-entry-to-the-education-component-frontend-src-components-education-tsx-for-msc-in-systems-engineering-from-university-of-lagos-akoka-with-year-2026-and-status-in-view-positioned-at-the-top-of-the-education-list-above-the-existing-b-eng-entry",
-      "featureTitle": "Add a new education entry to the Education component (frontend/src/components/Education.tsx) for 'MSc in Systems Engineering' from 'University of Lagos, Akoka' with year '2026' and status '(In View)', positioned at the top of the education list above the existing B.Eng entry",
-      "files": [
-        "frontend/src/components/Education.tsx"
-      ],
+      "featureId": "feature-replace-the-existing-cv-file-engr-jerry-e-osiobe-cv-pdf-in-frontend-public-assets-directory-with-the-newly-uploaded-cv-file",
+      "featureTitle": "Replace the existing CV file 'Engr. Jerry E. Osiobe CV.pdf' in frontend/public/assets/ directory with the newly uploaded CV file",
+      "files": [],
       "components": [
         "core-infrastructure@1.0.2",
         "shadcn-ui@1.0.0",
@@ -16,7 +14,7 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-41"
+        "REQ-44"
       ],
       "confidence": "high"
     }

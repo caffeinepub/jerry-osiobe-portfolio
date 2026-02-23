@@ -1,6 +1,6 @@
 {
   "frontend/src/App.tsx": "Main application component that orchestrates the portfolio layout by rendering all section components in sequence from HeroSection through Interests, followed by Footer.",
-  "frontend/src/components/HeroSection.tsx": "Hero section component displaying engineer's name, credentials, professional titles, contact information, and a prominent download CV button with teal accent styling that links to the CV PDF file.",
+  "frontend/src/components/HeroSection.tsx": "Hero section component displaying engineer's name, credentials, professional titles, contact information, and a prominent download CV button with teal accent styling that links to the updated CV PDF file (Engr. Jerry E. Osiobe CV.pdf).",
   "frontend/src/components/ProfessionalSummary.tsx": "Professional summary section component presenting the engineer's expertise and key qualifications in a card layout.",
   "frontend/src/components/CoreCompetencies.tsx": "Core competencies section displaying nine technical skills in a responsive grid with icons and hover effects.",
   "frontend/src/components/Education.tsx": "Education section listing four academic qualifications in reverse chronological order, now including MSc in Systems Engineering (In View, 2026) as the first entry, followed by B.Eng, OND, and SSCE with institution details and graduation years.",

@@ -67,7 +67,7 @@ export default function HeroSection() {
             {/* Download CV Button */}
             <div className="flex justify-center lg:justify-start">
               <a
-                href="/assets/NEW CV.pdf"
+                href="/assets/Engr. Jerry E. Osiobe CV.pdf"
                 download="Engr-Jerry-E-Osiobe-CV.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95"
               >

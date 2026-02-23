@@ -2,6 +2,11 @@ import { GraduationCap } from 'lucide-react';
 
 const education = [
   {
+    degree: 'MSc in Systems Engineering',
+    institution: 'University of Lagos, Akoka',
+    year: '2026 (In View)',
+  },
+  {
     degree: 'B.Eng, Materials & Metallurgical Engineering',
     institution: 'Federal University of Technology, Owerri',
     year: '2019',

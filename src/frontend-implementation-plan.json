@@ -1,51 +1,25 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove certifications gallery",
+  "title": "Add MSc Systems Engineering to Education section",
   "requirements": [
     {
-      "id": "REQ-37",
-      "summary": "Remove the CertificationsGallery component import and render from the main App.tsx component",
+      "id": "REQ-41",
+      "summary": "Add MSc in Systems Engineering entry to the Education component as the first item in the education list",
       "acceptanceCriteria": [
-        "The import statement for CertificationsGallery is removed from frontend/src/App.tsx",
-        "The <CertificationsGallery /> component render call is removed from the JSX",
-        "The application compiles without errors after the removal"
+        "The MSc entry appears as the first item in the education section",
+        "The degree displays as 'MSc in Systems Engineering'",
+        "The institution displays as 'University of Lagos, Akoka'",
+        "The year displays as '2026'",
+        "The status '(In View)' is clearly indicated",
+        "The entry follows the same card layout and styling as existing education entries",
+        "The graduation cap icon is displayed consistently with other entries"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/Education.tsx",
           "operation": "modify",
-          "description": "Remove the import statement for CertificationsGallery from the imports section and remove the <CertificationsGallery /> component from the JSX render sequence between the Interests section and Footer"
-        }
-      ]
-    },
-    {
-      "id": "REQ-38",
-      "summary": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
-      "acceptanceCriteria": [
-        "The file frontend/src/components/CertificationsGallery.tsx no longer exists",
-        "No references to CertificationsGallery remain in the codebase"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/CertificationsGallery.tsx",
-          "operation": "delete",
-          "description": "Delete the CertificationsGallery component file that displays 37 certification images in a responsive grid with modal integration"
-        }
-      ]
-    },
-    {
-      "id": "REQ-39",
-      "summary": "Delete the CertificateModal.tsx component file from frontend/src/components/",
-      "acceptanceCriteria": [
-        "The file frontend/src/components/CertificateModal.tsx no longer exists",
-        "No references to CertificateModal remain in the codebase"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/CertificateModal.tsx",
-          "operation": "delete",
-          "description": "Delete the CertificateModal component file that provides full-screen modal viewing functionality for certification images"
+          "description": "Add a new education entry for MSc in Systems Engineering from University of Lagos, Akoka (2026, In View) at the top of the education list. Insert the new entry before the existing B.Eng entry while maintaining the same card structure, graduation cap icon, and styling. Include the '(In View)' status alongside the year in a way that's visually consistent with the existing layout."
         }
       ]
     }

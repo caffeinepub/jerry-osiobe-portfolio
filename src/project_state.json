@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 23,
+  "projectStateVersion": 27,
   "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
   "architectural_notes": [
     "Single-page portfolio website with smooth scrolling navigation",
@@ -272,6 +272,15 @@
         "REQ-36"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-a-new-education-entry-to-the-education-component-frontend-src-components-education-tsx-for-msc-in-systems-engineering-from-university-of-lagos-akoka-with-year-2026-and-status-in-view-positioned-at-the-top-of-the-education-list-above-the-existing-b-eng-entry",
+      "title": "Add a new education entry to the Education component (frontend/src/components/Education.tsx) for 'MSc in Systems Engineering' from 'University of Lagos, Akoka' with year '2026' and status '(In View)', positioned at the top of the education list above the existing B.Eng entry",
+      "reqIds": [
+        "REQ-40",
+        "REQ-41"
+      ],
+      "version": 2
     }
   ],
   "new_feature_requests": [

@@ -1,46 +1,24 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-23T00:32:39.519Z",
+  "generatedAt": "2026-02-23T00:48:43.345Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 3,
-    "implemented": 3,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-37",
-        "summary": "Remove the CertificationsGallery component import and render from the main App.tsx component",
+        "id": "REQ-41",
+        "summary": "Add a new education entry to the Education component (frontend/src/components/Education.tsx) for 'MSc in Systems Engineering' from 'University of Lagos, Akoka' with year '2026' and status '(In View)', positioned at the top of the education list above the existing B.Eng entry",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/App.tsx"
+          "frontend/src/components/Education.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-38",
-        "summary": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/CertificationsGallery.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/CertificationsGallery.tsx"
-        ]
-      },
-      {
-        "id": "REQ-39",
-        "summary": "Delete the CertificateModal.tsx component file from frontend/src/components/",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/CertificateModal.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/CertificateModal.tsx"
+          "frontend/src/components/Education.tsx"
         ]
       }
     ]
@@ -50,9 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/App.tsx",
-    "frontend/src/components/CertificateModal.tsx",
-    "frontend/src/components/CertificationsGallery.tsx",
+    "frontend/src/components/Education.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

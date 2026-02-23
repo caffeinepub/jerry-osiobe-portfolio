@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-a-download-cv-button-in-the-herosection-component-that-triggers-download-of-the-cv-pdf-file-when-clicked",
-      "featureTitle": "Add a download CV button in the HeroSection component that triggers download of the CV PDF file when clicked",
+      "featureId": "feature-remove-the-certificationsgallery-component-import-and-render-from-the-main-app-tsx-component",
+      "featureTitle": "Remove the CertificationsGallery component import and render from the main App.tsx component",
       "files": [
-        "frontend/src/components/HeroSection.tsx"
+        "frontend/src/App.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -16,15 +16,15 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-23"
+        "REQ-25"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-ensure-the-cv-download-button-is-responsive-and-displays-appropriately-on-mobile-tablet-and-desktop-screen-sizes",
-      "featureTitle": "Ensure the CV download button is responsive and displays appropriately on mobile, tablet, and desktop screen sizes",
+      "featureId": "feature-delete-the-certificationsgallery-tsx-component-file-from-frontend-src-components",
+      "featureTitle": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
       "files": [
-        "frontend/src/components/HeroSection.tsx"
+        "frontend/src/components/CertificationsGallery.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -35,7 +35,26 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-24"
+        "REQ-26"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-delete-the-certificatemodal-tsx-component-file-from-frontend-src-components",
+      "featureTitle": "Delete the CertificateModal.tsx component file from frontend/src/components/",
+      "files": [
+        "frontend/src/components/CertificateModal.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-27"
       ],
       "confidence": "high"
     }

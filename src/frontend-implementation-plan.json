@@ -1,54 +1,49 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add downloadable CV to portfolio",
+  "title": "Remove certifications gallery from portfolio",
   "requirements": [
     {
-      "id": "REQ-22",
-      "summary": "Add CV PDF file as a static asset in the frontend public assets directory",
+      "id": "REQ-25",
+      "summary": "Remove the CertificationsGallery component import and render from the main App.tsx component",
       "acceptanceCriteria": [
-        "CV PDF file is stored in frontend/public/assets/ directory",
-        "File is accessible via the frontend public assets path"
+        "The CertificationsGallery component is no longer imported in App.tsx",
+        "The <CertificationsGallery /> element is removed from the component tree",
+        "The portfolio renders without the certifications gallery section"
       ],
       "file_operations": [
         {
-          "path": "frontend/public/assets/Engr-Jerry-E-Osiobe-CV.pdf",
-          "operation": "create",
-          "description": "Copy the uploaded CV file (Engr. Jerry E. Osiobe CV.pdf) to the frontend public assets directory. Rename to Engr-Jerry-E-Osiobe-CV.pdf (with hyphens instead of spaces) for web-safe URL access. This file will be served as a static asset accessible at /assets/Engr-Jerry-E-Osiobe-CV.pdf"
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Remove the import statement for CertificationsGallery from the component imports at the top of the file. Remove the <CertificationsGallery /> element from the JSX component tree while maintaining the existing layout structure and spacing between remaining sections (Hero, Professional Summary, Core Competencies, Education, Professional Certifications, Professional Experience, Research Papers, Interests, and Footer)."
         }
       ]
     },
     {
-      "id": "REQ-23",
-      "summary": "Add download CV button to HeroSection component that triggers PDF download on click",
+      "id": "REQ-26",
+      "summary": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
       "acceptanceCriteria": [
-        "Download button is visually integrated into the HeroSection component near contact information",
-        "Button has appropriate icon (e.g., Download icon from lucide-react)",
-        "Clicking the button initiates download of the CV PDF file",
-        "Button styling matches the portfolio's design system with teal accent colors",
-        "Button includes accessible label text such as 'Download CV' or 'Download Resume'"
+        "The frontend/src/components/CertificationsGallery.tsx file is removed from the project"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Add a download CV button below the contact information section. Import Download icon from lucide-react. Create a button element with an anchor tag linking to /assets/Engr-Jerry-E-Osiobe-CV.pdf with download attribute set to the filename. Style the button with teal accent colors matching the existing design system (bg-teal-600 hover:bg-teal-700, text-white). Include the Download icon and 'Download CV' text label. Position the button prominently within the hero layout, ensuring it integrates visually with the existing contact information display"
+          "path": "frontend/src/components/CertificationsGallery.tsx",
+          "operation": "delete",
+          "description": "Delete the CertificationsGallery.tsx component file that displays 54 professional certification images in a responsive grid with click-to-expand modal functionality."
         }
       ]
     },
     {
-      "id": "REQ-24",
-      "summary": "Ensure CV download button is responsive across all screen sizes",
+      "id": "REQ-27",
+      "summary": "Delete the CertificateModal.tsx component file from frontend/src/components/",
       "acceptanceCriteria": [
-        "Button is visible and accessible on all screen sizes",
-        "Button positioning adapts to the responsive layout of the HeroSection",
-        "Touch targets meet mobile usability standards (minimum 44x44px)"
+        "The frontend/src/components/CertificateModal.tsx file is removed from the project"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Apply responsive styling to the CV download button using Tailwind CSS breakpoint classes. Ensure button has adequate padding (e.g., px-6 py-3) to meet minimum 44x44px touch target for mobile. Use responsive layout utilities (flex, items-center, justify-center) to adapt button positioning for mobile (full-width or centered), tablet (inline with other elements), and desktop (integrated with contact information). Test that the button remains accessible and visually prominent across sm:, md:, and lg: breakpoints while maintaining the HeroSection's existing responsive layout"
+          "path": "frontend/src/components/CertificateModal.tsx",
+          "operation": "delete",
+          "description": "Delete the CertificateModal.tsx component file that provides the full-screen modal view for certificates with navigation controls and keyboard support."
         }
       ]
     }

@@ -6,7 +6,6 @@ import ProfessionalCertifications from './components/ProfessionalCertifications'
 import ProfessionalExperience from './components/ProfessionalExperience';
 import ResearchPapers from './components/ResearchPapers';
 import Interests from './components/Interests';
-import CertificationsGallery from './components/CertificationsGallery';
 import Footer from './components/Footer';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
         <ResearchPapers />
         <Interests />
       </main>
-      <CertificationsGallery />
       <Footer />
     </div>
   );

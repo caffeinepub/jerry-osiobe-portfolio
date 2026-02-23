@@ -1,72 +1,68 @@
 {
   "kind": "build_request",
-  "title": "Add downloadable CV to portfolio",
+  "title": "Remove certifications gallery from portfolio",
   "projectName": "Engineering Portfolio",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-22",
-      "text": "Add the uploaded CV file (Engr. Jerry E. Osiobe CV.pdf) as a static asset in the frontend/public/assets/ directory",
+      "id": "REQ-25",
+      "text": "Remove the CertificationsGallery component import and render from the main App.tsx component",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-6"
         ],
         "quotes": [
-          "Attached my CV to my portfolio and make it downloadable"
+          "Delete the certification gallery from the portfolio"
         ]
       },
       "acceptanceCriteria": [
-        "CV PDF file is stored in frontend/public/assets/ directory",
-        "File is accessible via the frontend public assets path"
+        "The CertificationsGallery component is no longer imported in App.tsx",
+        "The <CertificationsGallery /> element is removed from the component tree",
+        "The portfolio renders without the certifications gallery section"
       ]
     },
     {
-      "id": "REQ-23",
-      "text": "Add a download CV button in the HeroSection component that triggers download of the CV PDF file when clicked",
+      "id": "REQ-26",
+      "text": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-6"
         ],
         "quotes": [
-          "Attached my CV to my portfolio and make it downloadable"
+          "Delete the certification gallery from the portfolio"
         ]
       },
       "acceptanceCriteria": [
-        "Download button is visually integrated into the HeroSection component near contact information",
-        "Button has appropriate icon (e.g., Download icon from lucide-react)",
-        "Clicking the button initiates download of the CV PDF file",
-        "Button styling matches the portfolio's design system with teal accent colors",
-        "Button includes accessible label text such as 'Download CV' or 'Download Resume'"
+        "The frontend/src/components/CertificationsGallery.tsx file is removed from the project"
       ]
     },
     {
-      "id": "REQ-24",
-      "text": "Ensure the CV download button is responsive and displays appropriately on mobile, tablet, and desktop screen sizes",
+      "id": "REQ-27",
+      "text": "Delete the CertificateModal.tsx component file from frontend/src/components/",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-6"
+        ],
+        "quotes": [
+          "Delete the certification gallery from the portfolio"
         ]
       },
       "acceptanceCriteria": [
-        "Button is visible and accessible on all screen sizes",
-        "Button positioning adapts to the responsive layout of the HeroSection",
-        "Touch targets meet mobile usability standards (minimum 44x44px)"
+        "The frontend/src/components/CertificateModal.tsx file is removed from the project"
       ]
     }
   ],
   "constraints": [
-    "Do not modify immutable frontend paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui",
-    "Maintain consistency with existing portfolio design system (teal/slate color scheme, OKLCH color variables)",
-    "Preserve existing HeroSection layout and contact information display"
+    "Do not modify other portfolio sections (Hero, Professional Summary, Core Competencies, Education, Professional Certifications, Professional Experience, Research Papers, Interests)",
+    "Maintain the existing layout structure and spacing between remaining sections"
   ],
   "nonGoals": [
-    "Backend storage or dynamic CV upload functionality",
-    "CV preview or inline viewing (only download required)",
-    "Multiple CV versions or language variants",
-    "CV analytics or tracking"
+    "Removing certification images from the assets directory",
+    "Removing the Professional Certifications text section",
+    "Modifying any other components"
   ],
   "imageRequirements": {
     "required": [],

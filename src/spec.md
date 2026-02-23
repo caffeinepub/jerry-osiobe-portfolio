@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Add downloadable CV functionality to the portfolio website.
+**Goal:** Remove the certifications gallery section from the engineering portfolio.
 
 **Planned changes:**
-- Add the uploaded CV file (NEW CV.pdf) as a static asset in frontend/public/assets/
-- Add a download button in the HeroSection component that triggers CV download
-- Ensure the download button is responsive across all screen sizes
+- Remove CertificationsGallery component import and render from App.tsx
+- Delete the CertificationsGallery.tsx component file
+- Delete the CertificateModal.tsx component file
 
-**User-visible outcome:** Users can download the CV directly from the portfolio's hero section by clicking a download button.
+**User-visible outcome:** The portfolio no longer displays the certifications gallery section, showing only the remaining portfolio sections with maintained layout and spacing.

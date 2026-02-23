@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 31,
+  "projectStateVersion": 63,
   "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
   "architectural_notes": [
     "Single-page portfolio website with smooth scrolling navigation",
@@ -8,8 +8,7 @@
     "Contact information prominently displayed with email and phone links",
     "Timeline-based layout for experience section showing career progression",
     "DOI links for research publications leading to external sources",
-    "User will provide their own professional headshot photo to replace placeholder avatar",
-    "CV document attached as downloadable asset accessible from the portfolio"
+    "User will provide their own professional headshot photo to replace placeholder avatar"
   ],
   "known_issues": [],
   "isFixRequest": false,
@@ -170,9 +169,10 @@
       "id": "feature-ensure-the-cv-download-button-is-responsive-and-displays-appropriately-on-mobile-tablet-and-desktop-screen-sizes",
       "title": "Ensure the CV download button is responsive and displays appropriately on mobile, tablet, and desktop screen sizes",
       "reqIds": [
-        "REQ-24"
+        "REQ-24",
+        "REQ-49"
       ],
-      "version": 1
+      "version": 2
     },
     {
       "id": "feature-remove-the-certificationsgallery-component-import-and-render-from-the-main-app-tsx-component",
@@ -278,9 +278,10 @@
       "title": "Add a new education entry to the Education component (frontend/src/components/Education.tsx) for 'MSc in Systems Engineering' from 'University of Lagos, Akoka' with year '2026' and status '(In View)', positioned at the top of the education list above the existing B.Eng entry",
       "reqIds": [
         "REQ-40",
-        "REQ-41"
+        "REQ-41",
+        "REQ-65"
       ],
-      "version": 2
+      "version": 3
     },
     {
       "id": "feature-replace-the-existing-cv-file-in-frontend-public-assets-directory-with-the-newly-uploaded-cv-file-engr-jerry-e-osiobe-cv-pdf",
@@ -303,6 +304,216 @@
       "title": "Replace the existing CV file 'Engr. Jerry E. Osiobe CV.pdf' in frontend/public/assets/ directory with the newly uploaded CV file",
       "reqIds": [
         "REQ-44"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-cv-download-button-from-the-herosection-component-frontend-src-components-herosection-tsx",
+      "title": "Remove the CV download button from the HeroSection component (frontend/src/components/HeroSection.tsx)",
+      "reqIds": [
+        "REQ-45",
+        "REQ-54"
+      ],
+      "version": 2
+    },
+    {
+      "id": "feature-delete-the-cv-pdf-file-engr-jerry-e-osiobe-cv-pdf-from-the-frontend-public-assets-directory",
+      "title": "Delete the CV PDF file 'Engr. Jerry E. Osiobe CV.pdf' from the frontend/public/assets/ directory",
+      "reqIds": [
+        "REQ-46",
+        "REQ-74"
+      ],
+      "version": 2
+    },
+    {
+      "id": "feature-add-a-download-cv-button-in-the-herosection-component-frontend-src-components-herosection-tsx-that-triggers-download-of-a-cv-pdf-file-when-clicked",
+      "title": "Add a download CV button in the HeroSection component (frontend/src/components/HeroSection.tsx) that triggers download of a CV PDF file when clicked",
+      "reqIds": [
+        "REQ-47"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-debug-and-fix-the-cv-download-button-in-the-herosection-component-frontend-src-components-herosection-tsx-to-ensure-the-pdf-file-downloads-correctly-when-clicked",
+      "title": "Debug and fix the CV download button in the HeroSection component (frontend/src/components/HeroSection.tsx) to ensure the PDF file downloads correctly when clicked",
+      "reqIds": [
+        "REQ-50"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-proper-download-mechanism-using-either-an-anchor-tag-with-download-attribute-or-programmatic-file-download-to-ensure-cross-browser-compatibility",
+      "title": "Implement proper download mechanism using either an anchor tag with download attribute or programmatic file download to ensure cross-browser compatibility",
+      "reqIds": [
+        "REQ-52"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-msc-in-systems-engineering-education-entry-from-the-education-component-frontend-src-components-education-tsx-that-was-added-at-the-top-of-the-education-list",
+      "title": "Remove the MSc in Systems Engineering education entry from the Education component (frontend/src/components/Education.tsx) that was added at the top of the education list",
+      "reqIds": [
+        "REQ-53"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-delete-the-cv-pdf-file-from-the-frontend-public-assets-directory",
+      "title": "Delete the CV PDF file from the frontend/public/assets/ directory",
+      "reqIds": [
+        "REQ-55"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-delete-all-certification-image-files-from-the-frontend-public-assets-directory",
+      "title": "Delete all certification image files from the frontend/public/assets/ directory",
+      "reqIds": [
+        "REQ-59"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-download-cv-button-in-the-herosection-component-frontend-src-components-herosection-tsx-that-triggers-download-of-the-cv-pdf-file-when-clicked",
+      "title": "Add a download CV button in the HeroSection component (frontend/src/components/HeroSection.tsx) that triggers download of the CV PDF file when clicked",
+      "reqIds": [
+        "REQ-68"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-verify-that-the-cv-pdf-file-exists-in-the-frontend-public-assets-directory-and-confirm-the-exact-filename-being-referenced-in-the-herosection-component-s-download-button",
+      "title": "Verify that the CV PDF file exists in the frontend/public/assets/ directory and confirm the exact filename being referenced in the HeroSection component's download button",
+      "reqIds": [
+        "REQ-69"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-download-cv-button-implementation-in-the-herosection-component-frontend-src-components-herosection-tsx-to-ensure-the-pdf-file-opens-and-downloads-correctly-when-clicked",
+      "title": "Fix the download CV button implementation in the HeroSection component (frontend/src/components/HeroSection.tsx) to ensure the PDF file opens and downloads correctly when clicked",
+      "reqIds": [
+        "REQ-70"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-cv-download-button-using-an-anchor-tag-with-href-pointing-to-the-correct-static-asset-path-assets-filename-pdf-and-add-the-download-attribute-for-proper-file-download-behavior",
+      "title": "Implement the CV download button using an anchor tag with href pointing to the correct static asset path (/assets/[filename].pdf) and add the download attribute for proper file download behavior",
+      "reqIds": [
+        "REQ-71"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-cv-pdf-file-engr-jerry-e-osiobe-cv-pdf-in-the-frontend-public-assets-directory-with-the-newly-uploaded-cv-file",
+      "title": "Replace the existing CV PDF file 'Engr. Jerry E. Osiobe CV.pdf' in the frontend/public/assets/ directory with the newly uploaded CV file",
+      "reqIds": [
+        "REQ-72"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-download-cv-button-from-the-herosection-component-frontend-src-components-herosection-tsx",
+      "title": "Remove the Download CV button from the HeroSection component (frontend/src/components/HeroSection.tsx)",
+      "reqIds": [
+        "REQ-73"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-certificatesfolder-component-in-frontend-src-components-certificatesfolder-tsx-that-displays-certification-images-in-a-responsive-grid-layout-positioned-at-the-bottom-of-the-portfolio-page-before-the-footer",
+      "title": "Create a new CertificatesFolder component in frontend/src/components/CertificatesFolder.tsx that displays certification images in a responsive grid layout positioned at the bottom of the portfolio page before the Footer",
+      "reqIds": [
+        "REQ-75"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-responsive-grid-layout-in-the-certificatesfolder-component-that-adapts-to-different-screen-sizes-single-column-on-mobile-2-3-columns-on-tablet-and-3-4-columns-on-desktop-with-consistent-spacing-and-alignment",
+      "title": "Implement responsive grid layout in the CertificatesFolder component that adapts to different screen sizes: single column on mobile, 2-3 columns on tablet, and 3-4 columns on desktop with consistent spacing and alignment",
+      "reqIds": [
+        "REQ-76"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-interactive-features-to-the-certificates-folder-including-hover-effects-on-certificate-images-and-click-to-expand-functionality-for-viewing-certificates-in-full-size-with-smooth-transitions-between-states",
+      "title": "Add interactive features to the certificates folder including hover effects on certificate images and click-to-expand functionality for viewing certificates in full size with smooth transitions between states",
+      "reqIds": [
+        "REQ-77"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-certificatesfolder-component-into-the-main-app-tsx-component-positioning-it-after-the-interests-section-and-before-the-footer-with-appropriate-spacing-and-visual-hierarchy",
+      "title": "Integrate the CertificatesFolder component into the main App.tsx component, positioning it after the Interests section and before the Footer with appropriate spacing and visual hierarchy",
+      "reqIds": [
+        "REQ-78"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-prepare-the-frontend-public-assets-directory-to-accept-certificate-image-files-and-configure-the-certificatesfolder-component-to-reference-images-from-this-directory-using-the-assets-path-prefix",
+      "title": "Prepare the frontend/public/assets/ directory to accept certificate image files and configure the CertificatesFolder component to reference images from this directory using the /assets/ path prefix",
+      "reqIds": [
+        "REQ-79"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-file-upload-ui-in-the-certificatesfolder-component-frontend-src-components-certificatesfolder-tsx-with-a-button-or-drag-and-drop-area-that-allows-users-to-select-and-upload-certificate-image-files",
+      "title": "Add a file upload UI in the CertificatesFolder component (frontend/src/components/CertificatesFolder.tsx) with a button or drag-and-drop area that allows users to select and upload certificate image files",
+      "reqIds": [
+        "REQ-81"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-frontend-upload-logic-in-the-certificatesfolder-component-that-reads-selected-files-converts-them-to-blob-format-and-calls-the-backend-upload-method-using-the-useactor-hook",
+      "title": "Implement frontend upload logic in the CertificatesFolder component that reads selected files, converts them to Blob format, and calls the backend upload method using the useActor hook",
+      "reqIds": [
+        "REQ-82"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-certificatesfolder-component-to-fetch-uploaded-certificates-from-the-backend-using-react-query-and-display-them-in-the-existing-responsive-grid-layout-alongside-any-static-certificate-images",
+      "title": "Update the CertificatesFolder component to fetch uploaded certificates from the backend using React Query and display them in the existing responsive grid layout alongside any static certificate images",
+      "reqIds": [
+        "REQ-84"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-internet-identity-authentication-requirement-to-the-certificate-upload-feature-showing-the-upload-ui-only-to-authenticated-users-and-displaying-a-login-prompt-for-unauthenticated-visitors",
+      "title": "Add Internet Identity authentication requirement to the certificate upload feature, showing the upload UI only to authenticated users and displaying a login prompt for unauthenticated visitors",
+      "reqIds": [
+        "REQ-85"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-55-specific-certificate-images-from-the-certificatesfolder-component-array-corresponding-to-the-following-grid-positions-within-section-8-div-1-div-2-div-1-div-2-div-3-div-4-div-5-div-6-div-7-div-8-div-9-div-10-div-11-div-12-div-13-div-14-div-15-div-16-div-17-div-18-div-19-div-20-div-21-div-22-div-23-div-24-div-25-div-26-div-27-div-28-div-29-div-30-div-31-div-32-div-33-div-34-div-35-div-38-div-39-div-41-div-42-div-46-div-47-div-48-div-49-div-50-div-51-div-53-div-54-div-55-div-56-div-57-div-58-div-59-div-60-div-66-and-div-67",
+      "title": "Remove 55 specific certificate images from the CertificatesFolder component array corresponding to the following grid positions within section[8]/div[1]/div[2]: div[1], div[2], div[3], div[4], div[5], div[6], div[7], div[8], div[9], div[10], div[11], div[12], div[13], div[14], div[15], div[16], div[17], div[18], div[19], div[20], div[21], div[22], div[23], div[24], div[25], div[26], div[27], div[28], div[29], div[30], div[31], div[32], div[33], div[34], div[35], div[38], div[39], div[41], div[42], div[46], div[47], div[48], div[49], div[50], div[51], div[53], div[54], div[55], div[56], div[57], div[58], div[59], div[60], div[66], and div[67]",
+      "reqIds": [
+        "REQ-86"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-delete-the-55-corresponding-certification-image-files-from-the-frontend-public-assets-directory-that-were-removed-from-the-certificatesfolder-component",
+      "title": "Delete the 55 corresponding certification image files from the frontend/public/assets/ directory that were removed from the CertificatesFolder component",
+      "reqIds": [
+        "REQ-87"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-13-specific-certificate-images-from-the-certificatesfolder-component-array-corresponding-to-the-following-grid-positions-within-section-8-div-1-div-2-div-1-div-2-div-3-div-4-div-5-div-6-div-7-div-8-div-9-div-10-div-11-div-12-and-div-13",
+      "title": "Remove 13 specific certificate images from the CertificatesFolder component array corresponding to the following grid positions within section[8]/div[1]/div[2]: div[1], div[2], div[3], div[4], div[5], div[6], div[7], div[8], div[9], div[10], div[11], div[12], and div[13]",
+      "reqIds": [
+        "REQ-88"
       ],
       "version": 1
     }
@@ -375,23 +586,123 @@
       "status": "pending"
     },
     {
-      "id": "AR-16",
-      "summary": "Add downloadable CV attachment to portfolio with download functionality",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-17",
-      "summary": "Add the uploaded CV file (Engr. Jerry E. Osiobe CV.pdf) as a static asset in the frontend/public/assets/ directory",
+      "id": "AR-20",
+      "summary": "Remove the CertificationsGallery component import and render from the main App.tsx component",
       "reqIds": [
-        "REQ-22"
+        "REQ-56"
       ],
       "status": "pending"
     },
     {
-      "id": "AR-18",
-      "summary": "Replace the existing CV file with the newly uploaded CV (Engr. Jerry E. Osiobe CV.pdf) in the frontend/public/assets/ directory",
+      "id": "AR-21",
+      "summary": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
+      "reqIds": [
+        "REQ-57"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Delete the CertificateModal.tsx component file from frontend/src/components/",
+      "reqIds": [
+        "REQ-58"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Restore all frontend component files to their exact state as they existed in version 13 of the project",
+      "reqIds": [
+        "REQ-60"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Restore all frontend configuration files (index.css, tailwind.config.js, index.html) to their exact state as they existed in version 13",
+      "reqIds": [
+        "REQ-61"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-25",
+      "summary": "Restore all static assets in frontend/public/assets/ to their exact state as they existed in version 13, removing any files added after that version",
+      "reqIds": [
+        "REQ-62"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-26",
+      "summary": "Restore the backend/main.mo file to its exact state as it existed in version 13",
+      "reqIds": [
+        "REQ-63"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-27",
+      "summary": "Deploy version 13 as the live version of the application",
+      "reqIds": [
+        "REQ-64"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-28",
+      "summary": "Add MSc in Systems Engineering (in view, 2026) from University of Lagos, Akoka to education section",
       "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-29",
+      "summary": "Add a new education entry to the Education component (frontend/src/components/Education.tsx) for 'MSc in Systems Engineering' from 'University of Lagos, Akoka' with year '2026' and status '(In View)', positioned at the top of the education list above the existing B.Eng entry",
+      "reqIds": [
+        "REQ-66"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-36",
+      "summary": "Remove the CertificatesFolder component import and render from the main App.tsx component",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-37",
+      "summary": "Delete the CertificatesFolder.tsx component file from frontend/src/components/",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-38",
+      "summary": "Remove the certificate upload functionality and all related backend storage code from backend/main.mo",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-40",
+      "summary": "Delete the 13 corresponding certification image files from the frontend/public/assets/ directory that were removed from the CertificatesFolder component",
+      "reqIds": [
+        "REQ-89"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-41",
+      "summary": "Remove the certificate image at grid position div[5] within section[8]/div[1]/div[2] from the CertificatesFolder component array (frontend/src/components/CertificatesFolder.tsx)",
+      "reqIds": [
+        "REQ-90"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-42",
+      "summary": "Delete the corresponding certificate image file from the frontend/public/assets/ directory that was displayed at grid position div[5]",
+      "reqIds": [
+        "REQ-91"
+      ],
       "status": "pending"
     }
   ],

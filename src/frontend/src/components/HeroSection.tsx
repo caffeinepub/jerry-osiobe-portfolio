@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Download } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -43,7 +43,7 @@ export default function HeroSection() {
             </p>
 
             {/* Contact Information */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 text-slate-300 mb-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 text-slate-300">
               <a 
                 href="mailto:osiobejerry7@gmail.com"
                 className="flex items-center gap-2 hover:text-teal-400 transition-colors group"
@@ -62,18 +62,6 @@ export default function HeroSection() {
                 <MapPin className="w-5 h-5" />
                 <span className="text-sm sm:text-base">Lagos, Nigeria</span>
               </div>
-            </div>
-
-            {/* Download CV Button */}
-            <div className="flex justify-center lg:justify-start">
-              <a
-                href="/assets/Engr. Jerry E. Osiobe CV.pdf"
-                download="Engr-Jerry-E-Osiobe-CV.pdf"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95"
-              >
-                <Download className="w-5 h-5" />
-                <span>Download CV</span>
-              </a>
             </div>
           </div>
         </div>

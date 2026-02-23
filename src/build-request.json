@@ -1,36 +1,54 @@
 {
   "kind": "build_request",
-  "title": "Replace existing CV with newly uploaded file",
-  "projectName": "Jerry Osiobe Portfolio",
+  "title": "Remove specific certificate from CertificatesFolder grid",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-44",
-      "text": "Replace the existing CV file 'Engr. Jerry E. Osiobe CV.pdf' in frontend/public/assets/ directory with the newly uploaded CV file",
+      "id": "REQ-90",
+      "text": "Remove the certificate image at grid position div[5] within section[8]/div[1]/div[2] from the CertificatesFolder component array (frontend/src/components/CertificatesFolder.tsx)",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Upload this CV to replace the old one in my portfolio"
+          "delete"
         ]
       },
       "acceptanceCriteria": [
-        "The old CV file is removed from frontend/public/assets/",
-        "The new CV file is placed at frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
-        "The download link in HeroSection component continues to work with the same filename path"
+        "The certificate at the specified XPath position /html[1]/body[1]/div[1]/div[1]/main[1]/section[8]/div[1]/div[2]/div[5]/div[1]/div[1] is removed from the staticCertificates array",
+        "The grid layout adjusts automatically to fill the gap",
+        "No broken image references remain in the component"
+      ]
+    },
+    {
+      "id": "REQ-91",
+      "text": "Delete the corresponding certificate image file from the frontend/public/assets/ directory that was displayed at grid position div[5]",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "delete"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The image file is completely removed from the assets directory",
+        "No orphaned files remain in the project"
       ]
     }
   ],
   "constraints": [
-    "Do not modify the HeroSection component's download button link path",
-    "Maintain the exact filename 'Engr. Jerry E. Osiobe CV.pdf' to preserve existing references"
+    "Only remove the certificate at the exact grid position specified by the XPath: section[8]/div[1]/div[2]/div[5]",
+    "Do not modify any other certificates in the grid",
+    "Preserve the existing responsive grid layout and spacing"
   ],
   "nonGoals": [
-    "Changing the CV filename or path structure",
-    "Modifying any other portfolio components",
-    "Adding new CV-related features"
+    "Removing any other certificates from the gallery",
+    "Modifying the CertificateModal component",
+    "Changing the upload functionality",
+    "Altering the grid layout structure"
   ],
   "imageRequirements": {
     "required": [],

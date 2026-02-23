@@ -1,10 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the existing CV file with the newly uploaded version.
+**Goal:** Remove a specific certificate from the certificates gallery grid.
 
 **Planned changes:**
-- Remove the old CV file from frontend/public/assets/
-- Add the new CV file to frontend/public/assets/ with the same filename 'Engr. Jerry E. Osiobe CV.pdf'
+- Remove the certificate entry at grid position div[5] from the CertificatesFolder component array
+- Delete the corresponding certificate image file from the assets directory
+- Ensure the grid layout adjusts automatically after removal
 
-**User-visible outcome:** Users can download the updated CV when clicking the download button in the portfolio, with all existing links continuing to work seamlessly.
+**User-visible outcome:** The certificate at the specified grid position is no longer displayed in the certificates gallery, and the remaining certificates adjust to fill the space.

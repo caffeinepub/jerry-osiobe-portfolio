@@ -1,27 +1,32 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-23T01:11:42.916Z",
+  "generatedAt": "2026-02-23T12:40:36.728Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 2,
+    "implemented": 0,
     "items": [
       {
-        "id": "REQ-44",
-        "summary": "Replace the existing CV file 'Engr. Jerry E. Osiobe CV.pdf' in frontend/public/assets/ directory with the newly uploaded CV file",
-        "status": "implemented",
+        "id": "REQ-90",
+        "summary": "Remove the certificate image at grid position div[5] within section[8]/div[1]/div[2] from the CertificatesFolder component array (frontend/src/components/CertificatesFolder.tsx)",
+        "status": "missing",
         "plannedFiles": [
-          "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
-          "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf"
+          "frontend/src/components/CertificatesFolder.tsx"
         ],
-        "matchedFiles": [
-          "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
-          "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf"
-        ]
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-91",
+        "summary": "Delete the corresponding certificate image file from the frontend/public/assets/ directory that was displayed at grid position div[5]",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/public/assets/{certificate-filename}"
+        ],
+        "matchedFiles": []
       }
     ]
   },
@@ -29,7 +34,6 @@
     "build-request.json",
     "feature_evidence.json",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

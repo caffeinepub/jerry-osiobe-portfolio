@@ -1,26 +1,36 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace existing CV with newly uploaded file",
+  "title": "Remove specific certificate from CertificatesFolder grid",
   "requirements": [
     {
-      "id": "REQ-44",
-      "summary": "Replace the existing CV file with the newly uploaded CV file while maintaining the same filename and path",
+      "id": "REQ-90",
+      "summary": "Remove the certificate at grid position div[5] from the CertificatesFolder component",
       "acceptanceCriteria": [
-        "The old CV file is removed from frontend/public/assets/",
-        "The new CV file is placed at frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
-        "The download link in HeroSection component continues to work with the same filename path"
+        "The certificate at the specified XPath position /html[1]/body[1]/div[1]/div[1]/main[1]/section[8]/div[1]/div[2]/div[5]/div[1]/div[1] is removed from the staticCertificates array",
+        "The grid layout adjusts automatically to fill the gap",
+        "No broken image references remain in the component"
       ],
       "file_operations": [
         {
-          "path": "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
-          "operation": "delete",
-          "description": "Remove the existing CV file from the assets directory"
-        },
+          "path": "frontend/src/components/CertificatesFolder.tsx",
+          "operation": "modify",
+          "description": "Review the component to identify the certificate at grid position div[5] (the 5th item in the grid). If using a staticCertificates array, remove the entry at index 4 (zero-based). If certificates are rendered from uploaded data, identify and remove the specific certificate reference that appears at the 5th grid position. Ensure the grid layout remains intact and no broken image references remain."
+        }
+      ]
+    },
+    {
+      "id": "REQ-91",
+      "summary": "Delete the certificate image file from frontend/public/assets/ that was displayed at grid position div[5]",
+      "acceptanceCriteria": [
+        "The image file is completely removed from the assets directory",
+        "No orphaned files remain in the project"
+      ],
+      "file_operations": [
         {
-          "path": "frontend/public/assets/Engr. Jerry E. Osiobe CV.pdf",
-          "operation": "create",
-          "description": "Add the newly uploaded CV file (NEW CV 2026.pdf from the assets list) to the assets directory with the exact filename 'Engr. Jerry E. Osiobe CV.pdf' to maintain compatibility with the existing download link in HeroSection component"
+          "path": "frontend/public/assets/{certificate-filename}",
+          "operation": "delete",
+          "description": "Delete the specific certificate image file that corresponds to the 5th grid position in the CertificatesFolder component. The exact filename must be identified by reviewing the CertificatesFolder.tsx component code to determine which asset file is referenced at that position."
         }
       ]
     }

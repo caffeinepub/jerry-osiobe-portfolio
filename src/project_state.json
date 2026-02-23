@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 15,
+  "projectStateVersion": 23,
   "summary": "Professional portfolio website for Engr. Jerry Ebruvwiyor Osiobe showcasing engineering expertise, certifications, experience, and publications",
   "architectural_notes": [
     "Single-page portfolio website with smooth scrolling navigation",
@@ -178,23 +178,98 @@
       "id": "feature-remove-the-certificationsgallery-component-import-and-render-from-the-main-app-tsx-component",
       "title": "Remove the CertificationsGallery component import and render from the main App.tsx component",
       "reqIds": [
-        "REQ-25"
+        "REQ-25",
+        "REQ-37"
       ],
-      "version": 1
+      "version": 2
     },
     {
       "id": "feature-delete-the-certificationsgallery-tsx-component-file-from-frontend-src-components",
       "title": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
       "reqIds": [
-        "REQ-26"
+        "REQ-26",
+        "REQ-38"
       ],
-      "version": 1
+      "version": 2
     },
     {
       "id": "feature-delete-the-certificatemodal-tsx-component-file-from-frontend-src-components",
       "title": "Delete the CertificateModal.tsx component file from frontend/src/components/",
       "reqIds": [
-        "REQ-27"
+        "REQ-27",
+        "REQ-39"
+      ],
+      "version": 2
+    },
+    {
+      "id": "feature-create-a-new-certificationsgallery-component-in-frontend-src-components-certificationsgallery-tsx-that-displays-certification-images-in-a-responsive-grid-layout-with-hover-effects-and-click-to-expand-modal-functionality",
+      "title": "Create a new CertificationsGallery component in frontend/src/components/CertificationsGallery.tsx that displays certification images in a responsive grid layout with hover effects and click-to-expand modal functionality",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-responsive-grid-layout-in-certificationsgallery-that-adapts-to-different-screen-sizes-single-column-on-mobile-2-3-columns-on-tablet-and-3-4-columns-on-desktop-with-consistent-spacing",
+      "title": "Implement responsive grid layout in CertificationsGallery that adapts to different screen sizes: single column on mobile, 2-3 columns on tablet, and 3-4 columns on desktop with consistent spacing",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-certificatemodal-component-in-frontend-src-components-certificatemodal-tsx-for-full-screen-certificate-image-viewing-with-navigation-controls-and-close-functionality",
+      "title": "Create a CertificateModal component in frontend/src/components/CertificateModal.tsx for full-screen certificate image viewing with navigation controls and close functionality",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-all-uploaded-certification-images-as-static-assets-in-the-frontend-public-assets-directory-and-reference-them-correctly-in-the-certificationsgallery-component",
+      "title": "Configure all uploaded certification images as static assets in the frontend/public/assets/ directory and reference them correctly in the CertificationsGallery component",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-certificationsgallery-component-into-the-main-app-tsx-component-positioning-it-after-the-interests-section-and-before-the-footer-with-appropriate-spacing-and-visual-hierarchy",
+      "title": "Integrate the CertificationsGallery component into the main App.tsx component, positioning it after the Interests section and before the Footer with appropriate spacing and visual hierarchy",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-23-specific-certification-images-from-the-certificationsgallery-component-array-corresponding-to-the-following-grid-positions-div-32-div-31-div-29-div-28-div-27-div-25-div-24-div-26-div-22-div-19-div-18-div-16-div-15-div-14-div-13-div-11-div-10-div-8-div-7-div-6-div-5-div-4-and-div-1-within-section-8-div-1-div-1",
+      "title": "Remove 23 specific certification images from the CertificationsGallery component array corresponding to the following grid positions: div[32], div[31], div[29], div[28], div[27], div[25], div[24], div[26], div[22], div[19], div[18], div[16], div[15], div[14], div[13], div[11], div[10], div[8], div[7], div[6], div[5], div[4], and div[1] within section[8]/div[1]/div[1]",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-delete-the-23-corresponding-certification-image-files-from-frontend-public-assets-directory-that-were-removed-from-the-certificationsgallery-component",
+      "title": "Delete the 23 corresponding certification image files from frontend/public/assets/ directory that were removed from the CertificationsGallery component",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-32-specific-certification-images-from-the-certificationsgallery-component-array-corresponding-to-the-following-grid-positions-within-section-8-div-1-div-1-div-1-div-2-div-5-div-6-div-9-div-10-div-11-div-14-div-16-div-18-div-20-div-24-div-27-div-33-div-38-div-39-div-41-div-42-div-43-div-44-div-46-div-47-div-48-div-50-div-51-div-52-div-54-div-56-div-58-div-59-div-60-and-div-61",
+      "title": "Remove 32 specific certification images from the CertificationsGallery component array corresponding to the following grid positions within section[8]/div[1]/div[1]: div[1], div[2], div[5], div[6], div[9], div[10], div[11], div[14], div[16], div[18], div[20], div[24], div[27], div[33], div[38], div[39], div[41], div[42], div[43], div[44], div[46], div[47], div[48], div[50], div[51], div[52], div[54], div[56], div[58], div[59], div[60], and div[61]",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-delete-the-32-corresponding-certification-image-files-from-the-frontend-public-assets-directory-that-were-removed-from-the-certificationsgallery-component",
+      "title": "Delete the 32 corresponding certification image files from the frontend/public/assets/ directory that were removed from the CertificationsGallery component",
+      "reqIds": [
+        "REQ-36"
       ],
       "version": 1
     }

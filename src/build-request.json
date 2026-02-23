@@ -1,68 +1,70 @@
 {
   "kind": "build_request",
-  "title": "Remove certifications gallery from portfolio",
-  "projectName": "Engineering Portfolio",
+  "title": "Remove certifications gallery",
+  "projectName": "Jerry Osiobe Portfolio",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-25",
+      "id": "REQ-37",
       "text": "Remove the CertificationsGallery component import and render from the main App.tsx component",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-6"
+          "msg-latest"
         ],
         "quotes": [
-          "Delete the certification gallery from the portfolio"
+          "Remove the certifications gallery"
         ]
       },
       "acceptanceCriteria": [
-        "The CertificationsGallery component is no longer imported in App.tsx",
-        "The <CertificationsGallery /> element is removed from the component tree",
-        "The portfolio renders without the certifications gallery section"
+        "The import statement for CertificationsGallery is removed from frontend/src/App.tsx",
+        "The <CertificationsGallery /> component render call is removed from the JSX",
+        "The application compiles without errors after the removal"
       ]
     },
     {
-      "id": "REQ-26",
+      "id": "REQ-38",
       "text": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-6"
+          "msg-latest"
         ],
         "quotes": [
-          "Delete the certification gallery from the portfolio"
+          "Remove the certifications gallery"
         ]
       },
       "acceptanceCriteria": [
-        "The frontend/src/components/CertificationsGallery.tsx file is removed from the project"
+        "The file frontend/src/components/CertificationsGallery.tsx no longer exists",
+        "No references to CertificationsGallery remain in the codebase"
       ]
     },
     {
-      "id": "REQ-27",
+      "id": "REQ-39",
       "text": "Delete the CertificateModal.tsx component file from frontend/src/components/",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-6"
+          "msg-latest"
         ],
         "quotes": [
-          "Delete the certification gallery from the portfolio"
+          "Remove the certifications gallery"
         ]
       },
       "acceptanceCriteria": [
-        "The frontend/src/components/CertificateModal.tsx file is removed from the project"
+        "The file frontend/src/components/CertificateModal.tsx no longer exists",
+        "No references to CertificateModal remain in the codebase"
       ]
     }
   ],
   "constraints": [
-    "Do not modify other portfolio sections (Hero, Professional Summary, Core Competencies, Education, Professional Certifications, Professional Experience, Research Papers, Interests)",
-    "Maintain the existing layout structure and spacing between remaining sections"
+    "Do not modify any other sections or components of the portfolio",
+    "Maintain the existing layout flow from Interests section to Footer"
   ],
   "nonGoals": [
-    "Removing certification images from the assets directory",
-    "Removing the Professional Certifications text section",
-    "Modifying any other components"
+    "Deleting certification image files from frontend/public/assets/",
+    "Modifying the ProfessionalCertifications text section",
+    "Adding replacement content for the removed gallery"
   ],
   "imageRequirements": {
     "required": [],

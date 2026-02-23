@@ -1,21 +1,21 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-22T23:51:42.840Z",
-  "summary": "The diff shows that App.tsx was modified to remove the CertificationsGallery import and render, and both CertificateModal.tsx and CertificationsGallery.tsx files were modified (but not deleted). All three requirements from the BuildRequest are partially implemented but not fully completed.",
+  "generatedAt": "2026-02-23T00:32:39.515Z",
+  "summary": "The diff shows that App.tsx has been modified to remove CertificationsGallery component import and render, meeting REQ-37. However, the CertificationsGallery.tsx and CertificateModal.tsx files appear in the 'MODIFIED FILES' list rather than as removed/deleted files, indicating they still exist in the codebase. This fails to meet REQ-38 and REQ-39, which explicitly require these files to be deleted.",
   "missing_requirements": [
     {
-      "id": "REQ-26",
+      "id": "REQ-38",
       "requirement": "Delete the CertificationsGallery.tsx component file from frontend/src/components/",
-      "reason": "The file appears in the MODIFIED FILES list rather than REMOVED FILES, indicating it was modified but not deleted as required",
+      "reason": "The file frontend/src/components/CertificationsGallery.tsx appears in the 'MODIFIED FILES' list instead of 'REMOVED FILES', indicating it still exists in the codebase",
       "evidence": [
         "frontend/src/components/CertificationsGallery.tsx"
       ]
     },
     {
-      "id": "REQ-27",
+      "id": "REQ-39",
       "requirement": "Delete the CertificateModal.tsx component file from frontend/src/components/",
-      "reason": "The file appears in the MODIFIED FILES list rather than REMOVED FILES, indicating it was modified but not deleted as required",
+      "reason": "The file frontend/src/components/CertificateModal.tsx appears in the 'MODIFIED FILES' list instead of 'REMOVED FILES', indicating it still exists in the codebase",
       "evidence": [
         "frontend/src/components/CertificateModal.tsx"
       ]

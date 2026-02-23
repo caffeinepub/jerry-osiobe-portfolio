@@ -1,5 +1,5 @@
 {
-  "frontend/src/App.tsx": "Main application component that orchestrates the portfolio layout by rendering all section components in sequence (Hero, Professional Summary, Core Competencies, Education, Professional Certifications, Professional Experience, Research Papers, Interests, and Footer).",
+  "frontend/src/App.tsx": "Main application component that orchestrates the portfolio layout by rendering all section components in sequence from HeroSection through Interests, followed by Footer.",
   "frontend/src/components/HeroSection.tsx": "Hero section component displaying engineer's name, credentials, professional titles, contact information, and a prominent download CV button with teal accent styling that links to the CV PDF file.",
   "frontend/src/components/ProfessionalSummary.tsx": "Professional summary section component presenting the engineer's expertise and key qualifications in a card layout.",
   "frontend/src/components/CoreCompetencies.tsx": "Core competencies section displaying nine technical skills in a responsive grid with icons and hover effects.",
@@ -12,6 +12,6 @@
   "frontend/src/hooks/useQueries.ts": "Empty placeholder file as the portfolio is static and doesn't require backend data queries.",
   "frontend/src/index.css": "Global styles defining OKLCH color system with sophisticated slate and teal palette, typography hierarchy, and custom utility classes.",
   "frontend/tailwind.config.js": "Tailwind configuration with extended color palette featuring teal and slate colors, custom border radius, shadows, and typography settings.",
-  "frontend/src/components/CertificationsGallery.tsx": "Professional certifications gallery component displaying 54 certification images (24 original + 30 new) in a responsive grid layout with hover effects and click-to-expand modal functionality, including Six Sigma, Microsoft AI, Alison diplomas, Techlytics, COREN, NECA cybersecurity, Data Protection, NYSC, and academic credentials.",
-  "frontend/src/components/CertificateModal.tsx": "Reusable modal component for displaying certificate images in full-screen view with close button, previous/next navigation arrows, keyboard support (Escape, ArrowLeft, ArrowRight), and accessible ARIA attributes."
+  "frontend/src/components/CertificationsGallery.tsx": "Certifications gallery component displaying 37 certification images (reduced from 61) in a responsive grid layout with hover effects, click-to-expand functionality, and modal integration for full-screen viewing.",
+  "frontend/src/components/CertificateModal.tsx": "Full-screen modal component for viewing certification images with keyboard navigation support (Escape to close, arrow keys to navigate), previous/next buttons, image counter display, and accessible ARIA attributes."
 }

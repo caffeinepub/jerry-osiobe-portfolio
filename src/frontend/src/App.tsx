@@ -1,15 +1,15 @@
-import { ThemeProvider } from 'next-themes';
-import { Toaster } from './components/ui/sonner';
-import HeroSection from './components/HeroSection';
-import ProfessionalSummary from './components/ProfessionalSummary';
-import CoreCompetencies from './components/CoreCompetencies';
-import Education from './components/Education';
-import ProfessionalCertifications from './components/ProfessionalCertifications';
-import ProfessionalExperience from './components/ProfessionalExperience';
-import ResearchPapers from './components/ResearchPapers';
-import Interests from './components/Interests';
-import CertificatesFolder from './components/CertificatesFolder';
-import Footer from './components/Footer';
+import { ThemeProvider } from "next-themes";
+import CertificatesFolder from "./components/CertificatesFolder";
+import CoreCompetencies from "./components/CoreCompetencies";
+import Education from "./components/Education";
+import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
+import Interests from "./components/Interests";
+import ProfessionalCertifications from "./components/ProfessionalCertifications";
+import ProfessionalExperience from "./components/ProfessionalExperience";
+import ProfessionalSummary from "./components/ProfessionalSummary";
+import ResearchPapers from "./components/ResearchPapers";
+import { Toaster } from "./components/ui/sonner";
 
 function App() {
   return (

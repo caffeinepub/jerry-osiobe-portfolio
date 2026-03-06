@@ -1,25 +1,26 @@
-import { FileText, ExternalLink } from 'lucide-react';
+import { ExternalLink, FileText } from "lucide-react";
 
 const papers = [
   {
-    title: 'Expert Systems in CCTV and Access Control Management',
-    doi: '10.13140/RG.2.2.20538.86725',
+    title: "Expert Systems in CCTV and Access Control Management",
+    doi: "10.13140/RG.2.2.20538.86725",
   },
   {
-    title: 'Introduction to CCTV Surveillance Systems and Applications',
-    doi: '10.13140/RG.2.2.18049.31848',
+    title: "Introduction to CCTV Surveillance Systems and Its Applications",
+    doi: "10.13140/RG.2.2.18049.31848",
   },
   {
-    title: 'Business Continuity Plan using NIST SP 800-34 Rev. 1 Framework',
-    doi: '10.13140/RG.2.2.32324.28804',
+    title: "Business Continuity Plan using NIST SP 800-34 Rev. 1 Framework",
+    doi: "10.13140/RG.2.2.32324.28804",
   },
   {
-    title: 'Environmental Impact Assessment App using Prolog Reasoning',
-    doi: '10.13140/RG.2.2.21890.95688',
+    title: "Environmental Impact Assessment App using Prolog Based Reasoning",
+    doi: "10.13140/RG.2.2.21890.95688",
   },
   {
-    title: 'Unification of Real Differential, Real Difference and Modular Sequential Systems',
-    doi: '10.13140/RG.2.2.23568.67847',
+    title:
+      "Unification of Real Differential, Real Difference and Modular Sequential Systems",
+    doi: "10.13140/RG.2.2.23568.67847",
   },
 ];
 
@@ -31,9 +32,9 @@ export default function ResearchPapers() {
           Research Papers / Publications
         </h2>
         <div className="space-y-4 sm:space-y-5">
-          {papers.map((paper, index) => (
+          {papers.map((paper) => (
             <div
-              key={index}
+              key={paper.doi}
               className="bg-card rounded-xl p-5 sm:p-6 shadow-md border border-border hover:shadow-lg hover:border-teal-500/50 transition-all group"
             >
               <div className="flex items-start gap-4">

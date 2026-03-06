@@ -1,60 +1,71 @@
-import { Award, Briefcase, Database, Shield, TrendingUp, Code } from 'lucide-react';
+import {
+  Award,
+  Briefcase,
+  Code,
+  Database,
+  Shield,
+  TrendingUp,
+} from "lucide-react";
 
 const certifications = [
   {
-    category: 'Professional Engineering Memberships',
+    category: "Professional Engineering Memberships",
     icon: Award,
     items: [
-      'COREN Registered Engineer - ID: R75933 (2024)',
-      'Member Nigerian Society of Engineers ID: 66190 - MNSE (2024)',
-      'Member Nigerian Institution of Metallurgical, Materials and Mining Engineers ID: CM641 - MNIMMME (2025)',
-      'Member International Association of Engineers ID: 521253 - MIAENG (2025)',
+      "COREN Registered Engineer - ID: R75933 (2024)",
+      "Member Nigerian Society of Engineers ID: 66190 - MNSE (2024)",
+      "Member Nigerian Institution of Metallurgical, Materials and Mining Engineers ID: CM641 - MNIMMME (2025)",
+      "Member International Association of Engineers ID: 521253 - MIAENG (2025)",
     ],
   },
   {
-    category: 'Project & Risk Management',
+    category: "Project & Risk Management",
     icon: Briefcase,
     items: [
-      'Project Management Essentials Certification (2025)',
-      'Agile Project Management (2025)',
-      'Risk Management (2019)',
+      "Project Management Essentials Certification (2025)",
+      "Agile Project Management (2025)",
+      "Risk Management Short Course – E-Learning College (2019)",
+      "Project Management Short Course – E-Learning College (2019)",
     ],
   },
   {
-    category: 'Data & AI',
+    category: "Data & AI",
     icon: Database,
     items: [
-      'Data Analytics Professional (2025)',
-      'AI Fluency (Microsoft IOE, 2025)',
-      'AI for SMEs (2026)',
-      'IBM Explorer Certifications – Data Analytics, Cloud, AI, Cybersecurity & Quantum Computing (2019)',
+      "Data Analytics Professional (2025) - Techlytics Africa",
+      "Artificial Intelligence (AI) Fluency Training Certification (Microsoft IOE, 2025)",
+      "Artificial Intelligence (AI) for SMEs (Microsoft IOE, 2026)",
+      "IBM Explorer Certifications – Data Analytics, Cloud, AI, Cybersecurity & Quantum Computing (2019)",
+      "Data Protection Induction Certification – Nigeria Data Protection Commission (2025)",
     ],
   },
   {
-    category: 'Cybersecurity',
+    category: "Cybersecurity",
     icon: Shield,
     items: [
-      'Cybersecurity Awareness (2025)',
-      'Cybersecurity Certification - NECA-ITF TSDP (2025)',
-      'API Security Fundamentals (2025)',
-      'Securing API Servers (2025)',
-      'Fundamentals of Network Security (2015)',
+      "Cybersecurity Awareness Certification (2025) - HP Foundation Academy",
+      "Cybersecurity Certification - NECA-ITF TSDP (2025)",
+      "API Security Fundamentals (2025) - APISEC UNIVERSITY",
+      "Securing API Servers (2025) - APISEC UNIVERSITY",
+      "Fundamentals of Network Security Certification (2015) - ALISON",
     ],
   },
   {
-    category: 'Process Improvement',
+    category: "Process Improvement",
     icon: TrendingUp,
     items: [
-      'Six Sigma & Lean Six Sigma White Belt (2025)',
+      "Six Sigma & Lean Six Sigma White Belt (2025) - Council for Six Sigma Certification (CSSC)",
     ],
   },
   {
-    category: 'Technical Courses',
+    category: "Technical Courses",
     icon: Code,
     items: [
-      'Systems Engineering (2021)',
-      'Product Design & Manufacturing (2015)',
-      'C++ Programming (2019)',
+      "Systems Engineering (2021) - ALISON",
+      "Diploma in Product Design & Manufacturing (2015) - ALISON",
+      "C++ Programming (2019)",
+      "Fundamentals of Digital Marketing (2019)",
+      "Technical Support Fundamentals Certification (2021)",
     ],
   },
 ];
@@ -67,11 +78,11 @@ export default function ProfessionalCertifications() {
           Professional Certifications
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-          {certifications.map((cert, index) => {
+          {certifications.map((cert) => {
             const Icon = cert.icon;
             return (
               <div
-                key={index}
+                key={cert.category}
                 className="bg-card rounded-xl p-6 sm:p-8 shadow-md border border-border hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-center gap-3 mb-5">
@@ -83,12 +94,14 @@ export default function ProfessionalCertifications() {
                   </h3>
                 </div>
                 <ul className="space-y-3">
-                  {cert.items.map((item, itemIndex) => (
+                  {cert.items.map((item) => (
                     <li
-                      key={itemIndex}
+                      key={item}
                       className="flex items-start gap-2 text-sm sm:text-base text-muted-foreground"
                     >
-                      <span className="text-teal-500 mt-1.5 flex-shrink-0">•</span>
+                      <span className="text-teal-500 mt-1.5 flex-shrink-0">
+                        •
+                      </span>
                       <span>{item}</span>
                     </li>
                   ))}

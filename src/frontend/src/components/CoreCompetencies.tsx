@@ -1,41 +1,51 @@
-import { Wrench, Pencil, Shield, BarChart3, Camera, Network, Hammer, AlertTriangle, MessageSquare } from 'lucide-react';
+import {
+  AlertTriangle,
+  BarChart3,
+  Camera,
+  Hammer,
+  MessageSquare,
+  Network,
+  Pencil,
+  Shield,
+  Wrench,
+} from "lucide-react";
 
 const competencies = [
   {
     icon: Wrench,
-    title: 'Project & Systems Management',
+    title: "Project & Systems Management",
   },
   {
     icon: Pencil,
-    title: 'AutoCAD 2D/3D Design & Technical Drawings',
+    title: "AutoCAD 2D/3D Design & Technical Drawings",
   },
   {
     icon: Shield,
-    title: 'Cybersecurity (Pen Testing, Log Analysis, GRC)',
+    title: "Cybersecurity (Pen Testing, Log Analysis, GRC)",
   },
   {
     icon: BarChart3,
-    title: 'Data Analytics (SQL, Power BI, Excel)',
+    title: "Data Analytics (SQL, Power BI, Excel)",
   },
   {
     icon: Camera,
-    title: 'CCTV & Access Control Systems',
+    title: "CCTV & Access Control Systems",
   },
   {
     icon: Network,
-    title: 'Computer Networking & Structured Cabling',
+    title: "Computer Networking & Structured Cabling",
   },
   {
     icon: Hammer,
-    title: 'Fabrication & Mechanical Installation',
+    title: "Fabrication & Mechanical Installation",
   },
   {
     icon: AlertTriangle,
-    title: 'Risk Assessment & Quality Management',
+    title: "Risk Assessment & Quality Management",
   },
   {
     icon: MessageSquare,
-    title: 'Strong Communication (English & Urhobo)',
+    title: "Strong Communication (English & Urhobo)",
   },
 ];
 
@@ -47,11 +57,11 @@ export default function CoreCompetencies() {
           Core Competencies
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {competencies.map((competency, index) => {
+          {competencies.map((competency) => {
             const Icon = competency.icon;
             return (
               <div
-                key={index}
+                key={competency.title}
                 className="bg-card rounded-xl p-5 sm:p-6 shadow-md border border-border hover:shadow-xl hover:border-teal-500/50 transition-all duration-300 group"
               >
                 <div className="flex items-start gap-4">

@@ -1,66 +1,77 @@
-import { Briefcase } from 'lucide-react';
+import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    title: 'Fabrication Engineer',
-    company: 'Nehemiah Grace Developers Ltd, Lagos',
-    period: 'Dec 2025 – Present',
+    title: "Fabrication Engineer",
+    company: "Nehemiah Grace Developers Ltd, Lagos",
+    period: "Dec 2025 – Present",
     current: true,
     responsibilities: [
-      'Lead design development using AutoCAD 2D/3D.',
-      'Supervise fabrication technicians, ensuring compliance with engineering codes and standards.',
-      'Coordinate projects and oversee site operations.',
+      "Lead design development using AutoCAD 2D/3D.",
+      "Supervise fabrication technicians, ensuring compliance with engineering codes and standards.",
+      "Coordinate projects and oversee site operations.",
     ],
   },
   {
-    title: 'Cybersecurity Analyst (Internship)',
-    company: 'NECA-ITF Technical Skills Development Projects, Lagos',
-    period: 'Jun 2025 – Oct 2025',
+    title: "Cybersecurity Analyst (Internship)",
+    company: "NECA-ITF Technical Skills Development Projects, Lagos",
+    period: "Jun 2025 – Oct 2025",
     current: false,
     responsibilities: [
-      'Conducted penetration testing, log analysis, and GRC compliance.',
-      'Implemented security measures to safeguard networks and data.',
+      "Conducted penetration testing, log analysis, and GRC compliance.",
+      "Implemented security measures to safeguard networks and data.",
     ],
   },
   {
-    title: 'Data Analyst (Internship)',
-    company: 'Techlytics Africa, Lagos',
-    period: 'Feb 2025 – Jun 2025',
+    title: "Data Analyst (Internship)",
+    company: "Techlytics Africa, Lagos",
+    period: "Feb 2025 – Jun 2025",
     current: false,
     responsibilities: [
-      'Applied SQL, Power BI, and Excel for database management, data cleaning, analysis, and visualization.',
-      'Delivered insights to support business decisions and predictive modeling.',
+      "Applied SQL, Power BI, and Excel for database management, data cleaning, analysis, and visualization.",
+      "Delivered insights to support business decisions and predictive modeling.",
     ],
   },
   {
-    title: 'Project Engineer',
-    company: 'Java Data Solution Ltd, Lagos',
-    period: 'Nov 2023 – Sep 2024',
+    title: "Project Engineer",
+    company: "Java Data Solution Ltd, Lagos",
+    period: "Nov 2023 – Sep 2024",
     current: false,
     responsibilities: [
-      'Project supervision and site coordination.',
-      'Designed and installed CCTV and access control systems.',
-      'Trained technicians in AutoCAD 2D/ 3D modeling and LAN topology design for CCTV design and implementation.',
+      "Project supervision and site coordination.",
+      "Designed and installed CCTV and access control systems.",
+      "Trained technicians in AutoCAD 2D/ 3D modeling and LAN topology design for CCTV design and implementation.",
     ],
   },
   {
-    title: 'Project Engineer (Contract)',
-    company: 'Pavilion Technology Ltd, Lagos',
-    period: 'Sep 2021 – Oct 2023',
+    title: "Project Engineer (Contract)",
+    company: "Pavilion Technology Ltd, Lagos",
+    period: "Sep 2021 – Oct 2023",
     current: false,
     responsibilities: [
-      'Supervised CCTV and access control implementation and installations.',
-      'Assisted technical supervisors in designing and supervision of the CCTV real-time video surveillance projects.',
+      "Supervised CCTV and access control implementation and installations.",
+      "Assisted technical supervisors in designing and supervision of the CCTV real-time video surveillance projects.",
     ],
   },
   {
-    title: 'Network Support Assistant',
-    company: 'Michael & Cecilia Ibru University, Delta',
-    period: 'Jan 2017 – Dec 2018',
+    title: "Metallurgist (NYSC)",
+    company: "Metallurgical Training Institute, Anambra",
+    period: "Mar 2020 – Mar 2021",
     current: false,
     responsibilities: [
-      'Implemented structured cabling and configured network devices.',
-      'Supported JAMB CBT Centre networking infrastructure.',
+      "Investigated the performance and properties of metals such as iron, steel, aluminium, nickel and copper, and alloys such as steel and brass.",
+      "Taught ND1 students how to use AutoCAD software for both 2D Design and 3D Modeling in Engineering.",
+      "Provided administrative support to the Head of Department, Mechanical Engineering, ensuring smooth office operations and effective coordination of departmental activities.",
+    ],
+  },
+  {
+    title: "Network Support Assistant",
+    company: "Michael & Cecilia Ibru University, Delta",
+    period: "Jan 2017 – Dec 2018",
+    current: false,
+    responsibilities: [
+      "Implemented structured cabling and configured network devices.",
+      "Supported JAMB CBT Centre networking infrastructure.",
     ],
   },
 ];
@@ -75,13 +86,13 @@ export default function ProfessionalExperience() {
         <div className="relative">
           {/* Timeline line */}
           <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-0.5 bg-border" />
-          
+
           <div className="space-y-8 sm:space-y-10">
-            {experiences.map((exp, index) => (
-              <div key={index} className="relative">
+            {experiences.map((exp) => (
+              <div key={exp.title} className="relative">
                 {/* Timeline dot */}
                 <div className="hidden lg:block absolute left-8 top-8 w-4 h-4 rounded-full bg-teal-500 border-4 border-background transform -translate-x-1.5" />
-                
+
                 <div className="lg:ml-20 bg-card rounded-xl p-6 sm:p-8 shadow-md border border-border hover:shadow-lg transition-shadow">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                     <div className="flex items-start gap-3">
@@ -109,12 +120,14 @@ export default function ProfessionalExperience() {
                     </div>
                   </div>
                   <ul className="space-y-2 ml-0 sm:ml-13 lg:ml-0">
-                    {exp.responsibilities.map((resp, respIndex) => (
+                    {exp.responsibilities.map((resp) => (
                       <li
-                        key={respIndex}
+                        key={resp}
                         className="flex items-start gap-2 text-sm sm:text-base text-muted-foreground"
                       >
-                        <span className="text-teal-500 mt-1.5 flex-shrink-0">•</span>
+                        <span className="text-teal-500 mt-1.5 flex-shrink-0">
+                          •
+                        </span>
                         <span>{resp}</span>
                       </li>
                     ))}

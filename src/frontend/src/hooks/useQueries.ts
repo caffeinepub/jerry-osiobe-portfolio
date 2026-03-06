@@ -1,15 +1,15 @@
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { useActor } from './useActor';
-import type { CertificateAsset } from '../backend';
-import { ExternalBlob } from '../backend';
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import type { CertificateAsset } from "../backend";
+import type { ExternalBlob } from "../backend";
+import { useActor } from "./useActor";
 
 export function useGetAllCertificates() {
   const { actor, isFetching: actorFetching } = useActor();
 
   const query = useQuery<CertificateAsset[]>({
-    queryKey: ['certificates'],
+    queryKey: ["certificates"],
     queryFn: async () => {
-      if (!actor) throw new Error('Actor not available');
+      if (!actor) throw new Error("Actor not available");
       return actor.getAllCertificates();
     },
     enabled: !!actor && !actorFetching,
@@ -28,12 +28,15 @@ export function useUploadCertificate() {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: async ({ filename, blob }: { filename: string; blob: ExternalBlob }) => {
-      if (!actor) throw new Error('Actor not available');
+    mutationFn: async ({
+      filename,
+      blob,
+    }: { filename: string; blob: ExternalBlob }) => {
+      if (!actor) throw new Error("Actor not available");
       return actor.uploadCertificate(filename, blob);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['certificates'] });
+      queryClient.invalidateQueries({ queryKey: ["certificates"] });
     },
   });
 }
@@ -42,9 +45,9 @@ export function useGetCallerUserProfile() {
   const { actor, isFetching: actorFetching } = useActor();
 
   const query = useQuery({
-    queryKey: ['currentUserProfile'],
+    queryKey: ["currentUserProfile"],
     queryFn: async () => {
-      if (!actor) throw new Error('Actor not available');
+      if (!actor) throw new Error("Actor not available");
       return actor.getCallerUserProfile();
     },
     enabled: !!actor && !actorFetching,
@@ -64,11 +67,11 @@ export function useSaveCallerUserProfile() {
 
   return useMutation({
     mutationFn: async (profile: { name: string }) => {
-      if (!actor) throw new Error('Actor not available');
+      if (!actor) throw new Error("Actor not available");
       return actor.saveCallerUserProfile(profile);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['currentUserProfile'] });
+      queryClient.invalidateQueries({ queryKey: ["currentUserProfile"] });
     },
   });
 }

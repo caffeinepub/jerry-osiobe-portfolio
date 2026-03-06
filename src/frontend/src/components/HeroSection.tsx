@@ -1,21 +1,21 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: 'url(/assets/generated/hero-bg.dim_1920x600.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage: "url(/assets/generated/hero-bg.dim_1920x600.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
-      
+
       {/* Overlay Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-      
+
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Profile Image */}
@@ -39,19 +39,22 @@ export default function HeroSection() {
               MNSE, COREN
             </div>
             <p className="text-base sm:text-lg text-slate-300 mb-6 sm:mb-8 max-w-3xl mx-auto lg:mx-0">
-              Registered Engineer (COREN) | Member, Nigerian Society of Engineers (MNSE)
+              Registered Engineer (COREN) | Member, Nigerian Society of
+              Engineers (MNSE)
             </p>
 
             {/* Contact Information */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 text-slate-300">
-              <a 
+              <a
                 href="mailto:osiobejerry7@gmail.com"
                 className="flex items-center gap-2 hover:text-teal-400 transition-colors group"
               >
                 <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                <span className="text-sm sm:text-base">osiobejerry7@gmail.com</span>
+                <span className="text-sm sm:text-base">
+                  osiobejerry7@gmail.com
+                </span>
               </a>
-              <a 
+              <a
                 href="tel:+2347025937757"
                 className="flex items-center gap-2 hover:text-teal-400 transition-colors group"
               >

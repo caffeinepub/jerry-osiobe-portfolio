@@ -1,11 +1,11 @@
-import { BookOpen, Lightbulb, Waves, Plane, Trophy } from 'lucide-react';
+import { BookOpen, Lightbulb, Plane, Trophy, Waves } from "lucide-react";
 
 const interests = [
-  { name: 'Reading', icon: BookOpen },
-  { name: 'Learning', icon: Lightbulb },
-  { name: 'Swimming', icon: Waves },
-  { name: 'Travelling', icon: Plane },
-  { name: 'Football', icon: Trophy },
+  { name: "Reading", icon: BookOpen },
+  { name: "Learning", icon: Lightbulb },
+  { name: "Swimming", icon: Waves },
+  { name: "Travelling", icon: Plane },
+  { name: "Football", icon: Trophy },
 ];
 
 export default function Interests() {
@@ -16,11 +16,11 @@ export default function Interests() {
           Interests
         </h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-          {interests.map((interest, index) => {
+          {interests.map((interest) => {
             const Icon = interest.icon;
             return (
               <div
-                key={index}
+                key={interest.name}
                 className="bg-card rounded-xl px-6 py-4 shadow-md border border-border hover:shadow-lg hover:border-teal-500/50 transition-all group"
               >
                 <div className="flex items-center gap-3">

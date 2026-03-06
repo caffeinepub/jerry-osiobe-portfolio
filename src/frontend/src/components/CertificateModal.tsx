@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useEffect } from "react";
 
 interface Certificate {
   path: string;
@@ -12,7 +12,7 @@ interface CertificateModalProps {
   onClose: () => void;
   certificates: Certificate[];
   currentIndex: number;
-  onNavigate: (direction: 'prev' | 'next') => void;
+  onNavigate: (direction: "prev" | "next") => void;
 }
 
 export default function CertificateModal({
@@ -30,36 +30,39 @@ export default function CertificateModal({
     if (!isOpen) return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
+      if (e.key === "Escape") {
         onClose();
-      } else if (e.key === 'ArrowLeft' && hasPrev) {
-        onNavigate('prev');
-      } else if (e.key === 'ArrowRight' && hasNext) {
-        onNavigate('next');
+      } else if (e.key === "ArrowLeft" && hasPrev) {
+        onNavigate("prev");
+      } else if (e.key === "ArrowRight" && hasNext) {
+        onNavigate("next");
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    document.body.style.overflow = 'hidden';
+    window.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
 
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'unset';
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "unset";
     };
   }, [isOpen, onClose, onNavigate, hasPrev, hasNext]);
 
   if (!isOpen) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm animate-in fade-in duration-200"
-      onClick={onClose}
-      role="dialog"
-      aria-modal="true"
+    <dialog
+      open
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm animate-in fade-in duration-200 w-full h-full max-w-none max-h-none m-0 p-0 border-0"
       aria-labelledby="modal-title"
+      onClick={onClose}
+      onKeyDown={(e) => {
+        if (e.key === "Escape") onClose();
+      }}
     >
       {/* Close button */}
       <button
+        type="button"
         onClick={onClose}
         className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
         aria-label="Close modal"
@@ -75,9 +78,10 @@ export default function CertificateModal({
       {/* Previous button */}
       {hasPrev && (
         <button
+          type="button"
           onClick={(e) => {
             e.stopPropagation();
-            onNavigate('prev');
+            onNavigate("prev");
           }}
           className="absolute left-4 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all hover:scale-110"
           aria-label="Previous certificate"
@@ -89,9 +93,10 @@ export default function CertificateModal({
       {/* Next button */}
       {hasNext && (
         <button
+          type="button"
           onClick={(e) => {
             e.stopPropagation();
-            onNavigate('next');
+            onNavigate("next");
           }}
           className="absolute right-4 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all hover:scale-110"
           aria-label="Next certificate"
@@ -104,6 +109,7 @@ export default function CertificateModal({
       <div
         className="relative max-w-[90vw] max-h-[90vh] animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
+        onKeyDown={(e) => e.stopPropagation()}
       >
         <img
           src={currentCert.path}
@@ -111,7 +117,7 @@ export default function CertificateModal({
           className="max-w-full max-h-[90vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
           id="modal-title"
         />
-        
+
         {currentCert.title && (
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg">
             <p className="text-white text-center font-medium">
@@ -120,6 +126,6 @@ export default function CertificateModal({
           </div>
         )}
       </div>
-    </div>
+    </dialog>
   );
 }

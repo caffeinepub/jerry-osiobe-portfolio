@@ -1,25 +1,25 @@
-import { GraduationCap } from 'lucide-react';
+import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: 'MSc in Systems Engineering (In View)',
-    institution: 'University of Lagos, Akoka',
-    year: '2026',
+    degree: "MSc in Systems Engineering (In View)",
+    institution: "University of Lagos, Akoka",
+    year: "2026",
   },
   {
-    degree: 'B.Eng, Materials & Metallurgical Engineering',
-    institution: 'Federal University of Technology, Owerri',
-    year: '2019',
+    degree: "B.Eng, Materials & Metallurgical Engineering",
+    institution: "Federal University of Technology, Owerri",
+    year: "2019",
   },
   {
-    degree: 'OND, Ceramics & Glass Technology',
-    institution: 'Akanu Ibiam Federal Polytechnic, Unwana',
-    year: '2013',
+    degree: "OND, Ceramics & Glass Technology",
+    institution: "Akanu Ibiam Federal Polytechnic, Unwana",
+    year: "2013",
   },
   {
-    degree: 'NECO & WAEC, Senior School Certificate Examination',
-    institution: 'Ibru College, Agbarha-Otor',
-    year: '2010',
+    degree: "NECO & WAEC, Senior School Certificate Examination",
+    institution: "Ibru College, Agbarha-Otor",
+    year: "2010",
   },
 ];
 
@@ -31,9 +31,9 @@ export default function Education() {
           Education
         </h2>
         <div className="space-y-6">
-          {education.map((edu, index) => (
+          {education.map((edu) => (
             <div
-              key={index}
+              key={edu.degree}
               className="bg-card rounded-xl p-5 sm:p-6 lg:p-8 shadow-md border border-border hover:shadow-lg transition-shadow"
             >
               <div className="flex items-start gap-4">

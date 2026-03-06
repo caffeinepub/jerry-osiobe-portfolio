@@ -22,8 +22,8 @@ const certifications = [
     category: "Project & Risk Management",
     icon: Briefcase,
     items: [
-      "Project Management Essentials Certification (2025)",
-      "Agile Project Management (2025)",
+      "Project Management Essentials Certified (PMEC 2025) - Management and Strategy Institute (MSI)",
+      "Agile Project Management (2025) - HP Foundation Academy",
       "Risk Management Short Course – E-Learning College (2019)",
       "Project Management Short Course – E-Learning College (2019)",
     ],
@@ -32,7 +32,7 @@ const certifications = [
     category: "Data & AI",
     icon: Database,
     items: [
-      "Data Analytics Professional (2025) - Techlytics Africa",
+      "Data Analytics Professional Certification (2025) - Techlytics Africa",
       "Artificial Intelligence (AI) Fluency Training Certification (Microsoft IOE, 2025)",
       "Artificial Intelligence (AI) for SMEs (Microsoft IOE, 2026)",
       "IBM Explorer Certifications – Data Analytics, Cloud, AI, Cybersecurity & Quantum Computing (2019)",
@@ -61,11 +61,11 @@ const certifications = [
     category: "Technical Courses",
     icon: Code,
     items: [
-      "Systems Engineering (2021) - ALISON",
+      "Systems Engineering Certification (2021) - ALISON",
       "Diploma in Product Design & Manufacturing (2015) - ALISON",
-      "C++ Programming (2019)",
-      "Fundamentals of Digital Marketing (2019)",
-      "Technical Support Fundamentals Certification (2021)",
+      "C++ Programming Certification (2019)",
+      "Fundamentals of Digital Marketing Certification (2019) - GOOGLE",
+      "Technical Support Fundamentals Certification (2021) - Coursera / GOOGLE",
     ],
   },
 ];

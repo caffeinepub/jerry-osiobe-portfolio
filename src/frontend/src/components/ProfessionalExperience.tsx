@@ -13,6 +13,17 @@ const experiences = [
     ],
   },
   {
+    title: "Principal Consultant",
+    company: "Brux Engineering Solution Limited, Lagos",
+    period: "Oct 2024 – Nov 2025",
+    current: false,
+    responsibilities: [
+      "Overseeing complex consulting engagements from inception to completion, ensuring projects are delivered within scope, budget, and quality standards.",
+      "Responsible for driving strategic growth & managing high-stakes client relationships.",
+      "Leading complex project delivery on CCTV, Access control solution, Fiber Optic Cabling, Industrial fire alarm & Networking.",
+    ],
+  },
+  {
     title: "Cybersecurity Analyst (Internship)",
     company: "NECA-ITF Technical Skills Development Projects, Lagos",
     period: "Jun 2025 – Oct 2025",

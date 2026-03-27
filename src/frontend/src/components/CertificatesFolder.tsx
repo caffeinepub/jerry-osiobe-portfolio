@@ -169,7 +169,7 @@ export default function CertificatesFolder() {
             <div className="flex items-center gap-3">
               <FolderOpen className="w-8 h-8 text-teal-600 dark:text-teal-400" />
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground text-center">
-                Professional Certificates
+                Professional Certificates/ Design Sample
               </h2>
             </div>
 

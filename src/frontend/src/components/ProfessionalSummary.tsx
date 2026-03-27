@@ -8,12 +8,14 @@ export default function ProfessionalSummary() {
         <div className="bg-card rounded-2xl p-6 sm:p-8 lg:p-10 shadow-lg border border-border">
           <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
             Results-driven Engineer with expertise in Materials & Metallurgical
-            Engineering, Project Management, Cybersecurity, and Data Analytics.
-            Skilled in AutoCAD design, CCTV & Access Control Systems,
+            Engineering, Systems Engineering, Project Management, Cybersecurity,
+            and Data Analytics. Skilled in AutoCAD 2D Design/ 3D Modeling, CCTV
+            Technology, Access Control Solutions, Fiber Optics Cabling,
             Networking, and Fabrication Engineering. Adept at leading projects,
-            analyzing data for business intelligence, and implementing secure IT
-            systems. Recognized for strong problem-solving, technical
-            innovation, and team collaboration.
+            systems design, modeling, control & optimization, analyzing data for
+            business intelligence, and implementing secure Network/ IT systems.
+            Recognized for strong problem solving, technical innovation and team
+            collaboration.
           </p>
         </div>
       </div>
